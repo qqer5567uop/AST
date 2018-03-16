@@ -20,6 +20,7 @@ exports.addInformation = async function(StudentData) {
             name: StudentData.name,
             sex: StudentData.sex,
             class: StudentData.class,
+            phone: StudentData.phone,
             FirstExcept: StudentData.FirstExcept,
             SeconfExcept: StudentData.SeconfExcept,
             AdjustedOrNot: StudentData.AdjustedOrNot,

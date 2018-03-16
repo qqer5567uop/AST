@@ -1,5 +1,5 @@
 let express = require('express');
-let informationDB = require('../models/information_db');
+//let informationDB = require('../models/information_db');
 let router = express.Router();
 let bodyParser = require('body-parser');
 let urlencodedParser = bodyParser.urlencoded({extended: false});
@@ -11,6 +11,7 @@ router.post('/', urlencodedParser, function (req, res, next) {
             name: req.body.name,
             sex: req.body.sex,
             class: req.body.class,
+            phone: req.body.phone,
             FirstExcept: req.body.FirstExcept,
             SeconfExcept: req.body.SeconfExcept,
             AdjustedOrNot: req.body.AdjustedOrNot,
@@ -23,28 +24,33 @@ router.post('/', urlencodedParser, function (req, res, next) {
     if (!_validateStudentData(StudentData)) {
         res.sendStatus(400);
     } else { //将数据导入数据库
-        let data = informationDB.addInformation(StudentData);
-        data.information_id = data._id;
-        delete data._id;
-        return {result: data};
+        //let data = informationDB.addInformation(StudentData);
+        //data.information_id = data._id;
+        //delete data._id;
+        //return {result: data};
+        console.log(StudentData);
+        res.status(200).json(StudentData);
     }
 });
 // 验证StudentData是否格式合法，具有必须字段
 function _validateStudentData(StudentData) {
-    if (settingData.name === undefined)
+    if (StudentData.name === undefined)
         return false;
-    if (settingData.sex === undefined)
+    if (StudentData.sex === undefined)
         return false;
-    if (settingData.class === undefined)
+    if (StudentData.class === undefined)
         return false;
-    if (settingData.FirstExcept === undefined)
+    if (StudentData.phone === undefined)
         return false;
-    if (settingData.SeconfExcept === undefined)
+    if (StudentData.FirstExcept === undefined)
         return false;
-    if (settingData.AdjustedOrNot === undefined)
+    if (StudentData.SeconfExcept === undefined)
         return false;
-    if ((settingData.SelfIntroduction === undefined)||(length(settingData.SelfIntroduction)>300))
+    if (StudentData.AdjustedOrNot === undefined)
+        return false;
+    if ((StudentData.SelfIntroduction === undefined)||((StudentData.SelfIntroduction).length>300))
         return false;
     return true;
 }
+
 module.exports = router;
