@@ -17,16 +17,18 @@ MongoClient.connect(ConfigSet.DATABASE_URL, (err, client) => {
 exports.addInformation = async function(StudentData) {
     let collection = db.collection(ConfigSet.COLLECTION_NAME);
     let result = await collection.insertOne({
-            name: StudentData.name,
-            sex: StudentData.sex,
-            class: StudentData.class,
-            phone: StudentData.phone,
-            FirstExcept: StudentData.FirstExcept,
-            SeconfExcept: StudentData.SeconfExcept,
-            AdjustedOrNot: StudentData.AdjustedOrNot,
-            SelfIntroduction: StudentData.SelfIntroduction,
-        });
-    return result.ops[0];
+        name: StudentData.name,
+        sex: StudentData.sex,
+        class: StudentData.class,
+        phone: StudentData.phone,
+        FirstExcept: StudentData.FirstExcept,
+        SeconfExcept: StudentData.SeconfExcept,
+        AdjustedOrNot: StudentData.AdjustedOrNot,
+        SelfIntroduction: StudentData.SelfIntroduction,
+    });
+    // let result = collection.find({name: StudentData.name});
+    // console.log(result.ops[0]);
+    return result.ops[0]
 };
 
 

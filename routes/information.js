@@ -1,11 +1,11 @@
 let express = require('express');
-//let informationDB = require('../models/information_db');
+let informationDB = require('../models/information_db');
 let router = express.Router();
 let bodyParser = require('body-parser');
 let urlencodedParser = bodyParser.urlencoded({extended: false});
 let fs = require('fs');
 
-router.post('/', urlencodedParser, function (req, res, next) {
+router.post('/', urlencodedParser, async function (req, res, next) {
     // 获取req.body传来的信息，暂存在StudentData中
     let StudentData = {
             name: req.body.name,
@@ -17,19 +17,17 @@ router.post('/', urlencodedParser, function (req, res, next) {
             AdjustedOrNot: req.body.AdjustedOrNot,
             SelfIntroduction: req.body.SelfIntroduction,
         }
-    console.log(StudentData);
+     // console.log(StudentData);
 
-    console.log(_validateStudentData(StudentData));
+    // console.log(_validateStudentData(StudentData));
     // 函数验证StudentData是否符合规范，不符合则返回400（请求错误）
     if (!_validateStudentData(StudentData)) {
         res.sendStatus(400);
     } else { //将数据导入数据库
-        //let data = informationDB.addInformation(StudentData);
-        //data.information_id = data._id;
-        //delete data._id;
-        //return {result: data};
-        console.log(StudentData);
-        res.status(200).json(StudentData);
+        // console.log("ok");
+        let data = await informationDB.addInformation(StudentData);
+        // console.log(data);
+        res.status(200).json(data);
     }
 });
 // 验证StudentData是否格式合法，具有必须字段

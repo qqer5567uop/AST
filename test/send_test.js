@@ -13,7 +13,7 @@ describe('InformationSend API', function() {
         it('Should post information success', function(done){
             let StudentData = {
                     "name": "刘羿",
-                    "sex": "男",
+                    "sex": 1,
                     "class": "电信1705",
                     "phone": "13036154308",
                     "FirstExcept": "科协技术部",
@@ -39,7 +39,7 @@ describe('InformationSend API', function() {
         it('Should post information fail', function(done){
             let StudentData = {
                 "name": "刘羿",
-                "sex": "男",
+                "sex": 1,
                 "class": "电信1705",
                 "FirstExcept": "科协技术部",
                 "SelfIntroduction": "balabalabala"
