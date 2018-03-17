@@ -17,7 +17,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
             AdjustedOrNot: req.body.AdjustedOrNot,
             SelfIntroduction: req.body.SelfIntroduction,
         }
-     // console.log(StudentData);
+    // console.log(StudentData);
 
     // console.log(_validateStudentData(StudentData));
     // 函数验证StudentData是否符合规范，不符合则返回400（请求错误）
