@@ -13,7 +13,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
             class: req.body.class,
             phone: req.body.phone,
             FirstExcept: req.body.FirstExcept,
-            SeconfExcept: req.body.SeconfExcept,
+            SecondExcept: req.body.SecondExcept,
             AdjustedOrNot: req.body.AdjustedOrNot,
             SelfIntroduction: req.body.SelfIntroduction,
         }
@@ -42,7 +42,7 @@ function _validateStudentData(StudentData) {
         return false;
     if (StudentData.FirstExcept === undefined)
         return false;
-    if (StudentData.SeconfExcept === undefined)
+    if (StudentData.SecondExcept === undefined)
         return false;
     if (StudentData.AdjustedOrNot === undefined)
         return false;

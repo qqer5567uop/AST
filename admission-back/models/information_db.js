@@ -22,7 +22,7 @@ exports.addInformation = async function(StudentData) {
         class: StudentData.class,
         phone: StudentData.phone,
         FirstExcept: StudentData.FirstExcept,
-        SeconfExcept: StudentData.SeconfExcept,
+        SecondExcept: StudentData.SecondExcept,
         AdjustedOrNot: StudentData.AdjustedOrNot,
         SelfIntroduction: StudentData.SelfIntroduction,
     });

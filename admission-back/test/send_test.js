@@ -17,7 +17,7 @@ describe('InformationSend API', function() {
                     "class": "电信1705",
                     "phone": "13036154308",
                     "FirstExcept": "科协技术部",
-                    "SeconfExcept": "科协赛事部",
+                    "SecondExcept": "科协赛事部",
                     "AdjustedOrNot": 0,
                     "SelfIntroduction": "balabalabala"
                 }
