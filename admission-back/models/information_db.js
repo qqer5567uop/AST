@@ -14,9 +14,9 @@ MongoClient.connect(ConfigSet.DATABASE_URL, (err, client) => {
     }
 });
 
-exports.addInformation = async function(StudentData) {
+exports.addInformation = async function(StudentData,res) {
     let collection = db.collection(ConfigSet.COLLECTION_NAME);
-    let result = await collection.insertOne({
+    let result =await collection.insertOne({
         name: StudentData.name,
         sex: StudentData.sex,
         class: StudentData.class,
@@ -31,17 +31,6 @@ exports.addInformation = async function(StudentData) {
     return result.ops[0]
 };
 
-//检查数据是否重复
-exports._checkInformantion = async function(StudentData) {
-    let collection = db.collection(ConfigSet.COLLECTION_NAME);
-    var flag;
-    collection.findOne({name: StudentData.name}, function(err,doc){
-        console.log(doc);
-        console.log("*");
-        if(!doc)
-        flag=false;
-    flag = true;    
-    });
-    console.log(flag);
-    return flag;
+exports.getCollection = function(){
+    return db.collection(ConfigSet.COLLECTION_NAME);
 };
