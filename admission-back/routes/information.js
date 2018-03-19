@@ -27,7 +27,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
         res.status(400).send("Empty");
     } else {
         // console.log("ok");
-        let collection = informationDB.getCollection();
+        let collection = await informationDB.getCollection();
         collection.findOne({ name: StudentData.name }, function (err, data) {
             if (!data) {
                 collection.insertOne({
