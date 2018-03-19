@@ -31,6 +31,17 @@ exports.addInformation = async function(StudentData) {
     return result.ops[0]
 };
 
-
-
-
+//检查数据是否重复
+exports._checkInformantion = async function(StudentData) {
+    let collection = db.collection(ConfigSet.COLLECTION_NAME);
+    var flag;
+    collection.findOne({name: StudentData.name}, function(err,doc){
+        console.log(doc);
+        console.log("*");
+        if(!doc)
+        flag=false;
+    flag = true;    
+    });
+    console.log(flag);
+    return flag;
+};

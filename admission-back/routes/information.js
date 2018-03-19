@@ -20,8 +20,9 @@ router.post('/', urlencodedParser, async function (req, res, next) {
     // console.log(StudentData);
 
     // console.log(_validateStudentData(StudentData));
-    // 函数验证StudentData是否符合规范，不符合则返回400（请求错误）
-    if (!_validateStudentData(StudentData)) {
+    // 函数验证StudentData是否符合规范，不符合则返回400（请求错误） 
+    // 同是验证是否存在重复录入的情况
+    if (!_validateStudentData(StudentData) || informationDB._checkInformantion(StudentData)) {
         res.sendStatus(400);
     } else { //将数据导入数据库
         // console.log("ok");
