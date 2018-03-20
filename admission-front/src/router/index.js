@@ -7,12 +7,18 @@ import Form from '../components/Form'
 import AllDepIntro from '../components/AllDepIntro'
 import Display from '../components/Display'
 
+import KeXie from '../components/AllIntropage/KeXie'
+
 export default [
     {
       path: '/Home',component:Home
     },
     {
-      path: '/AllDepintro',component:AllDepIntro
+      path: '/AllDepintro',component:AllDepIntro,
+      children:[
+        {path: '',component:KeXie},
+        {path: '/KeXie',component:KeXie}
+      ]
 
     },
     {

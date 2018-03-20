@@ -1,7 +1,7 @@
 <template>
   <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="50%" style="width: 60%" class="demo-ruleForm">
 
-    <el-form-item label="姓名" prop="name">
+    <el-form-item label="姓名" prop="name" style="padding-top: 40px">
       <el-input  v-model="ruleForm.name"></el-input>
     </el-form-item>
 
@@ -43,6 +43,7 @@
     </el-form-item>
   </el-form>
 </template>
+
 
 
 <script>
