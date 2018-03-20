@@ -16,6 +16,10 @@
       <el-input v-model="ruleForm.class1"></el-input>
     </el-form-item>
 
+    <el-form-item label="学号" prop="_ID">
+      <el-input  v-model="ruleForm._ID"></el-input>
+    </el-form-item>
+
     <el-form-item label="手机" prop="phone">
       <el-input v-model="ruleForm.phone"></el-input>
     </el-form-item>
@@ -53,6 +57,7 @@
           name: '',
           sex: '',
           class1: '',
+          _ID: '',
           phone: '',
           FirstExcept: '',
           Secondexcept: '',
@@ -70,6 +75,10 @@
           ],
           class1: [
             { required: true, message: '请输入班级', trigger: 'change' }
+          ],
+          _ID: [
+            { type: 'text', required : true, message : '请输入学号', trigger: 'change' },
+            { min: 10,max: 10, message: '请输入正确的学号', trigger: 'blur'}
           ],
           phone: [
             { type: 'number', required: true, message: '请输入手机号', trigger: 'change' },
