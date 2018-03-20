@@ -46,7 +46,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
             }
             else {
                 console.log(data);
-                if (req.body.uid == data.uid) {
+                if (req.body.uid == data.uid ) {
                     collection.save({
                         "_id": data._id,
                         "name": StudentData.name,
