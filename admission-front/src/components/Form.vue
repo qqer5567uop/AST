@@ -120,7 +120,7 @@
                 let data = res.data
                 console.log(data)
                 if (data.code === 200) {
-                  // 登录成功
+                  alert(data)
                 } else {
                   console.log(data.msg)
                   this.tips = data.msg
