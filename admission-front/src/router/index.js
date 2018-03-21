@@ -7,7 +7,9 @@ import Form from '../components/Form'
 import AllDepIntro from '../components/AllIntropage/AllDepIntro'
 import Display from '../components/Display'
 
-import KeXie from '../components/AllIntropage/KeXie'
+import KeXieJiShuBu from '../components/AllIntropage/KeXieJiShuBu'
+import KeXieSaiShiBu from '../components/AllIntropage/KeXieSaiShiBu'
+
 
 export default [
     {
@@ -23,6 +25,9 @@ export default [
       path: '/Form',component:Form
     },
     {
-    path: '/KeXie',component:KeXie
-    }
+      path: '/KeXieJiShuBu',component:KeXieJiShuBu
+    },
+    {
+      path: '/KeXieSaiShiBu',component:KeXieSaiShiBu
+    },
     ]
