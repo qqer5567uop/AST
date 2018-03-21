@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" >
     <div><h1>学生会</h1></div>
     <div>
       <p>

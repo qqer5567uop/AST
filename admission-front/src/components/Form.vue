@@ -122,9 +122,9 @@
             })
               .then((res) => {
                 let data = res.data
-                console.log(data)
+                //console.log(data)
                 if (data.code === 200) {
-                  // 登录成功
+                  alter("提交成功")
                 } else {
                   console.log(data.msg)
                   this.tips = data.msg
