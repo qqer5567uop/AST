@@ -1,10 +1,11 @@
 <template>
-  <el-row class="row" id="card">
+  <div>
+    <el-row class="row" id="card">
 
       <el-card :body-style="{ padding: '50px' }"  class="card" >
         <img src="" class="image">
         <div style="padding: 14px;">
-          <button v-on:click="handleCard('kexie')">部门1</button>
+          <button v-on:click="handleCard('KeXie')">部门1</button>
         </div>
       </el-card>
 
@@ -29,9 +30,11 @@
 
         </div>
       </el-card>
-  </el-row>
 
+    </el-row>
+  </div>
 </template>
+
 
 <script>
   import ElRow from "element-ui/packages/row/src/row";
@@ -49,8 +52,8 @@
     methods: {
       handleCard:function (key) {
         switch (key) {
-          case 'kexie':
-            this.$router.push('/AllDepintro/KeXie');
+          case 'KeXie':
+            this.$router.push('/KeXie');
             break;
           default:
             this.$router.push('/Home');
