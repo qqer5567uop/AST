@@ -18,15 +18,11 @@ router.post('/', urlencodedParser, async function (req, res, next) {
         AdjustedOrNot: req.body.AdjustedOrNot,
         SelfIntroduction: req.body.SelfIntroduction,
     }
-    // console.log(StudentData);
-
-    // console.log(_validateStudentData(StudentData));
     // 函数验证StudentData是否符合规范，不符合则返回400（请求错误） 
     // 同是验证是否存在重复录入的情况
     if (!_validateStudentData(StudentData)) {
         res.status(400).json({"msg":"Empty"})
     } else {
-        // console.log("ok");
         let collection = await informationDB.getCollection();
         collection.findOne({ name: StudentData.name }, function (err, data) {
             if (!data) {
@@ -45,8 +41,8 @@ router.post('/', urlencodedParser, async function (req, res, next) {
                 })
             }
             else {
-                console.log(data);
-                if (req.body.uid == data.uid ) {
+                //console.log(data);
+                if (req.body.uid === data.uid ) {
                     collection.save({
                         "_id": data._id,
                         "name": StudentData.name,

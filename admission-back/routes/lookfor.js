@@ -9,11 +9,11 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 	if (!_validateStudentData(req.body)) {
 		res.status(400).json({"msg":"Empty"})
 	} else {
-		collection.findOne({ uid: req.body.uidnph.substr(-4) }, function (err, data) {
+		collection.findOne({ uid: req.body.uidnph.substr(0,10) }, function (err, data) {
 			if (!data) {
 				res.status(400).json({"msg":"Not found"})
 			} else {
-				if (data.phone.substr(-4) === req.body.phone) {
+				if (data.phone.substr(-4) === req.body.uidnph.substr(-4)) {
 					res.status(200).json({
 						name: data.name,
 						uid: data.uid,
