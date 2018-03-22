@@ -24,7 +24,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
     // 函数验证StudentData是否符合规范，不符合则返回400（请求错误） 
     // 同是验证是否存在重复录入的情况
     if (!_validateStudentData(StudentData)) {
-        res.status(400).send("Empty");
+        res.status(400).jso({"msg":"Empty"})
     } else {
         // console.log("ok");
         let collection = await informationDB.getCollection();
@@ -41,8 +41,8 @@ router.post('/', urlencodedParser, async function (req, res, next) {
                     AdjustedOrNot: StudentData.AdjustedOrNot,
                     SelfIntroduction: StudentData.SelfIntroduction,
                 }, function () {
-                    res.status(200).send("Success");
-                });
+                    res.status(200).json({"msg":"Create Successfully"})
+                })
             }
             else {
                 console.log(data);
@@ -59,34 +59,34 @@ router.post('/', urlencodedParser, async function (req, res, next) {
                         "AdjustedOrNot": StudentData.AdjustedOrNot,
                         "SelfIntroduction": StudentData.SelfIntroduction,
                     }, function () {
-                        res.status(200).send("Change Successfully");
-                    });
+                        res.status(200).json({"msg":"Change Successfully"});
+                    })
                 } else {
-                    res.status(400).send("Dump");
+                    res.status(400).json({"msg":"Dump"})
                 }
             }
-        });
-    };
+        })
+    }
 });
 // 验证StudentData是否格式合法，具有必须字段
 function _validateStudentData(StudentData) {
-    if (StudentData.name === undefined)
+    if (StudentData.name === undefined || StudentData.name == "")
         return false;
-    if (StudentData.uid === undefined)
+    if (StudentData.uid === undefined || StudentData.uid == "")
         return false;
-    if (StudentData.sex === undefined)
+    if (StudentData.sex === undefined || StudentData.sex == "")
         return false;
-    if (StudentData.class === undefined)
+    if (StudentData.class === undefined || StudentData.class == "")
         return false;
-    if (StudentData.phone === undefined)
+    if (StudentData.phone === undefined || StudentData.phone == "")
         return false;
-    if (StudentData.FirstExcept === undefined)
+    if (StudentData.FirstExcept === undefined || StudentData.FirstExcept == "")
         return false;
-    if (StudentData.SecondExcept === undefined)
+    if (StudentData.SecondExcept === undefined || StudentData.SecondExcept == "")
         return false;
-    if (StudentData.AdjustedOrNot === undefined)
+    if (StudentData.AdjustedOrNot === undefined || StudentData.AdjustedOrNot == "")
         return false;
-    if ((StudentData.SelfIntroduction === undefined) || ((StudentData.SelfIntroduction).length > 300))
+    if ((StudentData.SelfIntroduction === undefined || StudentData.SelfIntroduction == "") || ((StudentData.SelfIntroduction).length > 300))
         return false;
     return true;
 }

@@ -3,18 +3,17 @@ let informationDB = require('../models/information_db');
 let router = express.Router();
 let bodyParser = require('body-parser');
 let urlencodedParser = bodyParser.urlencoded({ extended: false });
-let fs = require('fs');
 
 router.post('/', urlencodedParser, async function (req, res, next) {
 	let collection = await informationDB.getCollection();
 	if (!_validateStudentData(req.body)) {
-		res.status(400).send("Empty");
+		res.status(400).json({"msg":"Empty"})
 	} else {
-		collection.findOne({ name: req.body.name }, function (err, data) {
+		collection.findOne({ uid: req.body.uidnph.substr(-4) }, function (err, data) {
 			if (!data) {
-				res.status(400).send("Not found");
+				res.status(400).json({"msg":"Not found"})
 			} else {
-				if (data.uid == req.body.uid && data.phone == req.body.phone) {
+				if (data.phone.substr(-4) === req.body.phone) {
 					res.status(200).json({
 						name: data.name,
 						uid: data.uid,
@@ -27,7 +26,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 						SelfIntroduction: data.SelfIntroduction,
 					});
 				} else {
-					res.status(400).send("Not matched")
+					res.status(400).json({"msg":"Not matched"})
 				}
 			}
 		})
@@ -35,11 +34,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 })
 
 function _validateStudentData(StudentData) {
-	if (StudentData.name === undefined)
-		return false;
-	if (StudentData.uid === undefined)
-		return false;
-	if (StudentData.phone === undefined)
+	if (StudentData.uidnph === undefined || StudentData.uidnph == "")
 		return false;
 	return true;
 }
