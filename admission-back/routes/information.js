@@ -24,7 +24,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
     // 函数验证StudentData是否符合规范，不符合则返回400（请求错误） 
     // 同是验证是否存在重复录入的情况
     if (!_validateStudentData(StudentData)) {
-        res.status(400).jso({"msg":"Empty"})
+        res.status(400).json({"msg":"Empty"})
     } else {
         // console.log("ok");
         let collection = await informationDB.getCollection();
