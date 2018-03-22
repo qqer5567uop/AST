@@ -44,6 +44,7 @@
     <el-form-item>
       <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
       <el-button @click="resetForm('ruleForm')">重置</el-button>
+      <el-button @click="open3">信息查询</el-button>
     </el-form-item>
   </el-form>
 </template>
@@ -124,13 +125,41 @@
                 let data = res.data
                 //console.log(data)
                 if (data.code === 200) {
-                  alter("提交成功")
+                    this.$alert("提交成功！")
                 } else {
-                  console.log(data.msg)
-                  this.tips = data.msg
+                  if (data.code === 400){
+                    this.$alert("提交失败，请检查你的数据类型！")
+                  }
                 }
               })
-          }
+          },
+      open3() {
+        this.$prompt('请输入学号+手机号后4位(用+连接)', '身份验证', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          inputPattern: /^U\d{9}\+\d{4}$/,
+          inputErrorMessage: '学号格式不正确'
+        }).then(({ value }) => {
+            this.$http({
+              url: '/???',
+              method: 'GET',
+              body: {
+                uidnph: this.value
+              }
+            })
+            .then((res)=>{
+                let data1=res.data
+                if(1){
+                  this.$alert(data1)
+                }
+            })
+        }).catch(() => {
+          //this.$message({
+            //type: 'info',
+            //message: '取消输入'
+          //});       
+        });
+      }
     }
   }
 </script>
