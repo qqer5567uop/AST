@@ -20,6 +20,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 				// 验证身份信息是否匹配
 				if (data.phone.substr(-4) === req.body.uidnph.substr(-4)) {
 					res.status(200).json({
+						msg : "Success",
 						name: data.name,
 						uid: data.uid,
 						sex: data.sex,
