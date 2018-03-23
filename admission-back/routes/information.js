@@ -4,8 +4,14 @@ let router = express.Router();
 let bodyParser = require('body-parser');
 let urlencodedParser = bodyParser.urlencoded({ extended: false });
 let fs = require('fs');
+let ConfigSet = require('../configs/config_set.json');
 
 router.post('/', urlencodedParser, async function (req, res, next) {
+	// 创建时间类型，用于检测是否超时
+	let endDate = new Date();
+	endDate.setFullYear(ConfigSet.END_YEAR, ConfigSet.END_MONTH-1, ConfigSet.END_DAY);
+	let today = new Date();
+
 	// 获取req.body传来的信息，暂存在StudentData中
 	let StudentData = {
 		name: req.body.name,
@@ -18,6 +24,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 		AdjustedOrNot: req.body.AdjustedOrNot,
 		SelfIntroduction: req.body.SelfIntroduction,
 	}
+
 	// 函数验证StudentData是否符合规范，不符合则返回400（请求错误） 
 	if (!_validateStudentData(StudentData)) {
 		res.status(400).json({ "msg": "Empty" })
@@ -44,21 +51,28 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 				//console.log(data);
 				// 如果学号相同，则修改数据，否则认为是姓名或学号输入错误，出现重复
 				if (req.body.uid === data.uid) {
-					collection.save({
-						"_id": data._id,
-						"name": StudentData.name,
-						"uid": StudentData.uid,
-						"sex": StudentData.sex,
-						"class": StudentData.class,
-						"phone": StudentData.phone,
-						"FirstExcept": StudentData.FirstExcept,
-						"SecondExcept": StudentData.SecondExcept,
-						"AdjustedOrNot": StudentData.AdjustedOrNot,
-						"SelfIntroduction": StudentData.SelfIntroduction,
-					}, function () {
-						res.status(200).json({ "msg": "Change Successfully" });
-					})
-				} else {
+					// 如果现在的时间小于截止时间，则修改数据，否者返回错误
+					if (today <= endDate) {
+						collection.save({
+							"_id": data._id,
+							"name": StudentData.name,
+							"uid": StudentData.uid,
+							"sex": StudentData.sex,
+							"class": StudentData.class,
+							"phone": StudentData.phone,
+							"FirstExcept": StudentData.FirstExcept,
+							"SecondExcept": StudentData.SecondExcept,
+							"AdjustedOrNot": StudentData.AdjustedOrNot,
+							"SelfIntroduction": StudentData.SelfIntroduction,
+						}, function () {
+							res.status(200).json({ "msg": "Change Successfully" });
+						})
+					}
+					else {
+						res.status(400).json({ "msg": "Out Date" });
+					}
+				}
+				else {
 					res.status(400).json({ "msg": "Dump" })
 				}
 			}
