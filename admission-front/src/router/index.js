@@ -32,6 +32,9 @@ export default [
       path: '/Home',component:Home
     },
     {
+      path: '/',component:Home
+    },
+    {
       path: '/AllDepintro',component:AllDepIntro,
     },
     {

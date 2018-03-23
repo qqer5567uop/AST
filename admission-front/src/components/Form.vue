@@ -158,11 +158,12 @@
             })
             .then((res)=>{
                 let data1 = res.data
+                let data2 = "姓名："+data1.name+"\n"+"性别："+data1.sex+"\n"+"班级："+data1.class+"\n"+"学号："+data1.uid+"\n"+"手机号："+data1.phone+"\n"+"第一志愿："+data1.FirstExcept+"\n"+"第二志愿："+data1.SecondExcept+"\n"
                 if(data1.code === 200){
-                  this.$alert(data1,'个人信息', {
+                  alert(data2,'个人信息', {
                     confirmButtonText: '确定',
                   });
-                }/*else*/{
+                }else{
                   if(data.code === 400){
                     if(data.msg === "Empty")
                       $alter("您输入的数据有误")
