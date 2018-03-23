@@ -124,33 +124,51 @@
               .then((res) => {
                 let data = res.data
                 //console.log(data)
-                if (data.code === 200) {
-                    this.$alert("提交成功！")
-                } else {
+                /*if (data.code === 200)*/ {
+                    if(data.msg === "Create Successfully")
+                      this.$alert('提交成功', '', {
+                        confirmButtonText: '确定',
+                      });
+                    if(data.msg === "Change Successfully")
+                      this.$alert('修改成功', '', {
+                        confirmButtonText: '确定',
+                      });
+                } /*else*/ {
                   if (data.code === 400){
-                    this.$alert("提交失败，请检查你的数据类型！")
+                      this.$alert('提交失败，请检查你的数据类型', '', {
+                        confirmButtonText: '确定',
+                      });
                   }
                 }
               })
           },
       open3() {
-        this.$prompt('请输入学号+手机号后4位(用+连接)', '身份验证', {
+        this.$prompt('请输入学号+手机号后4位(例：U201713371+4308）', '身份验证', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
           inputPattern: /^U\d{9}\+\d{4}$/,
           inputErrorMessage: '学号格式不正确'
         }).then(({ value }) => {
             this.$http({
-              url: '/???',
-              method: 'GET',
+              url: '/InformationLookfor',
+              method: 'POST',
               body: {
-                uidnph: this.value
+                uidnph: value
               }
             })
             .then((res)=>{
-                let data1=res.data
-                if(1){
-                  this.$alert(data1)
+                let data1 = res.data
+                if(data1.code === 200){
+                  this.$alert(data1,'个人信息', {
+                    confirmButtonText: '确定',
+                  });
+                }/*else*/{
+                  if(data.code === 400){
+                    if(data.msg === "Empty")
+                      $alter("您输入的数据有误")
+                    if(data.msg === "Not matched")
+                      $alter("查无此人")
+                  }
                 }
             })
         }).catch(() => {

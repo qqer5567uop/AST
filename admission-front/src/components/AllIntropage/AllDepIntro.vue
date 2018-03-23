@@ -4,119 +4,132 @@
 
       <el-card :body-style="{ padding: '0px' }"  class="card" >
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('KeXieJiShuBu')"><img src="/static/AST.jpg" class="image">科协技术部</span>
+          <span v-on:click="handleCard('KeXieJiShuBu')"><img src="/static/Department/AST.jpg" class="image">科协技术部</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('KeXieSaiShiBu')"><img src="/static/AST.jpg" class="image">科协赛事部</span>
+          <span v-on:click="handleCard('KeXieSaiShiBu')"><img src="/static/Department/AST.jpg" class="image">科协赛事部</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('XiaoHongMao')"><img src="/static/AST.jpg" class="image">小红帽</span>
+          <br>
+          <span v-on:click="handleCard('XiaoHongMao')"><img src="/static/Department/xiaohongmao.gif" class="image">小红帽</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('XinWenZhongXin')"><img src="/static/AST.jpg" class="image">新闻中心</span>
+          <span v-on:click="handleCard('XinWenZhongXin')"><img src="/static/Department/news.gif" class="image">新闻中心</span>
         </div>
       </el-card>   
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('BanGongShi')"><img src="/static/AST.jpg" class="image">办公室</span>
+          <br> 
+          <span v-on:click="handleCard('BanGongShi')"><img src="/static/Department/office.gif" class="image">办公室</span>
         </div>
       </el-card>  
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('LiYiDui')"><img src="/static/AST.jpg" class="image">礼仪队</span>
+          <br>
+          <span v-on:click="handleCard('LiYiDui')"><img src="/static/Department/liyi.gif" class="image">礼仪队</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('BianLunDui')"><img src="/static/AST.jpg" class="image">辩论队</span>
+          <br>
+          <span v-on:click="handleCard('BianLunDui')"><img src="/static/Department/bianlun.gif" class="image">辩论队</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('ZhuChiRenDui')"><img src="/static/AST.jpg" class="image">主持人队</span>
+          <br>
+          <span v-on:click="handleCard('ZhuChiRenDui')"><img src="/static/Department/zhuchi.gif" class="image">主持人队</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('WenYiBu')"><img src="/static/AST.jpg" class="image">文艺部</span>
+          <br>
+          <span v-on:click="handleCard('WenYiBu')"><img src="/static/Department/wenyi.gif" class="image">文艺部</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('XueShuBu')"><img src="/static/AST.jpg" class="image">学术部</span>
+          <br>
+          <span v-on:click="handleCard('XueShuBu')"><img src="/static/Department/xueshu.gif" class="image">学术部</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('WaiLianBu')"><img src="/static/AST.jpg" class="image">外联部</span>
+          <br>
+          <span v-on:click="handleCard('WaiLianBu')"><img src="/static/Department/wailian.gif" class="image">外联部</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('NvShengBu')"><img src="/static/AST.jpg" class="image">女生部</span>
+          <br>
+          <span v-on:click="handleCard('NvShengBu')"><img src="/static/Department/nvsheng.gif" class="image">女生部</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('QuanYiBu')"><img src="/static/AST.jpg" class="image">权益部</span>
+          <span v-on:click="handleCard('QuanYiBu')"><img src="/static/Department/quanyi.gif" class="image">权益部</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('QiMingShuWu')"><img src="/static/AST.jpg" class="image">启明书屋</span>
+          <br>
+          <span v-on:click="handleCard('QiMingShuWu')"><img src="/static/Department/qiming.gif" class="image">启明书屋</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('ZuZhiBu')"><img src="/static/AST.jpg" class="image">组织部</span>
+          <br>
+          <span v-on:click="handleCard('ZuZhiBu')"><img src="/static/Department/zuzhi.gif" class="image">组织部</span>
         </div>
       </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('XinLiBu')"><img src="/static/AST.jpg" class="image">心理部</span>
+          <br>
+          <span v-on:click="handleCard('XinLiBu')"><img src="/static/Department/xinli.gif" class="image">心理部</span>
         </div>
       </el-card>                          
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('SheHuiShiJianBu')"><img src="/static/AST.jpg" class="image">社会实践部</span>
+          <br>
+          <span v-on:click="handleCard('SheHuiShiJianBu')"><img src="/static/Department/sheshi.gif" class="image">社会实践部</span>
         </div>
       </el-card> 
 
@@ -124,7 +137,8 @@
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <span v-on:click="handleCard('XuanChuanBu')"><img src="/static/AST.jpg" class="image">宣传部</span>
+          <br>
+          <span v-on:click="handleCard('XuanChuanBu')"><img src="/static/Department/xuanchuan.gif" class="image">宣传部</span>
         </div>
       </el-card>    
 
