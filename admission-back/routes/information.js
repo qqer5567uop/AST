@@ -27,7 +27,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 
 	// 函数验证StudentData是否符合规范，不符合则返回400（请求错误） 
 	if (!_validateStudentData(StudentData)) {
-		res.status(400).json({ "msg": "Set Data Error" })
+		res.status(400).json({ "msg": "Data Error" })
 	} else {
 		let collection = await informationDB.getCollection();
 		// 验证数据库中是否存在同姓名的数据，如果不存在这新建，否则检测学号是否相同
