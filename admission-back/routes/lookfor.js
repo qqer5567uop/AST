@@ -10,17 +10,17 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 
 	// 检测数据是否符合
 	if (!_validateStudentData(req.body)) {
-		res.status(400).json({ "msg": "Empty" })
+		res.status(400).json({ "msg": "Get Data Error" })
 	} else {
 		// 依据学号查询是否有数据
 		collection.findOne({ uid: req.body.uidnph.substr(0, 10) }, function (err, data) {
 			if (!data) {
-				res.status(400).json({ "msg": "Not found" })
+				res.status(400).json({ "msg": "Get Fail" })
 			} else {
 				// 验证身份信息是否匹配
 				if (data.phone.substr(-4) === req.body.uidnph.substr(-4)) {
 					res.status(200).json({
-						msg : "Success",
+						msg : "Get Success",
 						name: data.name,
 						uid: data.uid,
 						sex: data.sex,
@@ -32,7 +32,7 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 						SelfIntroduction: data.SelfIntroduction,
 					});
 				} else {
-					res.status(400).json({ "msg": "Not matched" })
+					res.status(400).json({ "msg": "Get Fail" })
 				}
 			}
 		})
