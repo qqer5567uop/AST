@@ -124,7 +124,6 @@
               .then((res) => {
                 let data = res.data
                 //console.log(data)
-                /*if (data.code === 200)*/ {
                     if(data.msg === "Create Successfully")
                       this.$alert('提交成功', '', {
                         confirmButtonText: '确定',
@@ -133,8 +132,7 @@
                       this.$alert('修改成功', '', {
                         confirmButtonText: '确定',
                       });
-                } /*else*/ {
-                  if (data.code === 400){
+                  if (data.msg === "Dump"){
                       this.$alert('提交失败，请检查你的数据类型', '', {
                         confirmButtonText: '确定',
                       });
@@ -164,10 +162,9 @@
                     confirmButtonText: '确定',
                   });
                 }else{
-                  if(data.code === 400){
                     if(data.msg === "Empty")
-                      $alter("您输入的数据有误")
-                    if(data.msg === "Not matched")
+                      $alter("您输入的数据为空")
+                    if(data.msg === "Not found")
                       $alter("查无此人")
                   }
                 }
