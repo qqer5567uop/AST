@@ -13,7 +13,7 @@ module.exports = {
       proxyTable: {
         // proxy all requests starting with /api to jsonplaceholder
         '/': {
-          target: 'http://localhost:8883',
+          target: 'http://localhost:3000',
           changeOrigin: true,
           }
       },

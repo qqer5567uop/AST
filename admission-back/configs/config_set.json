@@ -1,7 +1,7 @@
 {
-    "DATABASE_URL": "mongodb://localhost:27017",
+    "DATABASE_URL": "mongodb://localhost:27001",
     "DATABASE_NAME": "admission",
-    "COLLECTION_NAME": "studentstest",
+    "COLLECTION_NAME": "students",
     "END_YEAR" : 2018,
     "END_MONTH" : 3 ,
     "END_DAY" : 25
