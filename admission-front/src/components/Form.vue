@@ -165,6 +165,7 @@
                   alert(data2,'个人信息', {
                     confirmButtonText: '确定',
                   });
+<<<<<<< HEAD
                 }
                   if(data1.msg === "Get Data Error"){
                   this.$alert("您输入的数据格式有误，请重新输入",'个人信息', {
@@ -177,12 +178,20 @@
                   });
                 }
               
+=======
+                }else{
+                    if(data.msg === "Empty")
+                      $alter("您输入的数据为空")
+                    if(data.msg === "Not found")
+                      $alter("查无此人")
+                  }
+>>>>>>> b4551a74e12e1937b0b0d0ac0d9e1409a7dbd3fd
             })
         }).catch(() => {
           //this.$message({
             //type: 'info',
             //message: '取消输入'
-          //});       
+          //});
         });
       }
     }
