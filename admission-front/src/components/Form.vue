@@ -124,20 +124,24 @@
               .then((res) => {
                 let data = res.data
                 //console.log(data)
-                    if(data.msg === "Create Successfully")
+                    if(data.msg === "Set Success")
                       this.$alert('提交成功', '', {
                         confirmButtonText: '确定',
                       });
-                    if(data.msg === "Change Successfully")
+                    if(data.msg === "Change Success")
                       this.$alert('修改成功', '', {
                         confirmButtonText: '确定',
                       });
-                  if (data.msg === "Dump"){
+                    if(data.msg === "Time Error")
+                      this.$alert('提交失败，提交时间已到', '', {
+                        confirmButtonText: '确定',
+                      });
+                    if (data.msg === "Change Fail"){
                       this.$alert('提交失败，请检查你的数据类型', '', {
                         confirmButtonText: '确定',
                       });
                   }
-                }
+                
               })
           },
       open3() {
@@ -157,17 +161,22 @@
             .then((res)=>{
                 let data1 = res.data
                 let data2 = "姓名："+data1.name+"\n"+"性别："+data1.sex+"\n"+"班级："+data1.class+"\n"+"学号："+data1.uid+"\n"+"手机号："+data1.phone+"\n"+"第一志愿："+data1.FirstExcept+"\n"+"第二志愿："+data1.SecondExcept+"\n"
-                if(data1.code === 200){
+                if(data1.msg === "Get Success"){
                   alert(data2,'个人信息', {
                     confirmButtonText: '确定',
                   });
-                }else{
-                    if(data.msg === "Empty")
-                      $alter("您输入的数据为空")
-                    if(data.msg === "Not found")
-                      $alter("查无此人")
-                  }
                 }
+                  if(data1.msg === "Get Data Error"){
+                  this.$alert("您输入的数据格式有误，请重新输入",'个人信息', {
+                    confirmButtonText: '确定',
+                  });
+                }
+                  if(data1.msg === "Get Fail"){
+                  this.$alert("查无此人",'个人信息', {
+                    confirmButtonText: '确定',
+                  });
+                }
+              
             })
         }).catch(() => {
           //this.$message({
