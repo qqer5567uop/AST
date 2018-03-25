@@ -1,7 +1,7 @@
 <template>
-  <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="50%" style="width: 60%" class="demo-ruleForm">
+  <el-form :model="ruleForm" :rules="rules"  ref="ruleForm" label-width="30%" style="width: 400px;margin-right: 10%" class="demo-ruleForm">
 
-    <el-form-item label="姓名" prop="name" style="padding-top: 40px">
+    <el-form-item class="form_item" label="姓名" prop="name" style="padding-top: 40px">
       <el-input  v-model="ruleForm.name"></el-input>
     </el-form-item>
 
@@ -41,7 +41,7 @@
       <el-input type="textarea" v-model="ruleForm.SelfIntroduction"></el-input>
     </el-form-item>
 
-    <el-form-item>
+    <el-form-item style="">
       <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
       <el-button @click="resetForm('ruleForm')">重置</el-button>
       <el-button @click="open3">信息查询</el-button>
@@ -180,5 +180,8 @@
 </script>
 
 <style scoped>
+  .demo-ruleForm{
+    width: 400px;
+  }
 
 </style>
