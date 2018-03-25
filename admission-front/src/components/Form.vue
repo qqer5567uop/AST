@@ -1,7 +1,7 @@
 <template>
-  <el-form :model="ruleForm" :rules="rules"  ref="ruleForm" label-width="30%" class="demo-ruleForm">
+  <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="50%" style="width: 60%" class="demo-ruleForm">
 
-    <el-form-item class="form_item" label="姓名" prop="name" style="padding-top: 40px">
+    <el-form-item label="姓名" prop="name" style="padding-top: 40px">
       <el-input  v-model="ruleForm.name"></el-input>
     </el-form-item>
 
@@ -41,7 +41,7 @@
       <el-input type="textarea" v-model="ruleForm.SelfIntroduction"></el-input>
     </el-form-item>
 
-    <el-form-item style="">
+    <el-form-item>
       <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
       <el-button @click="resetForm('ruleForm')">重置</el-button>
       <el-button @click="open3">信息查询</el-button>
@@ -141,7 +141,7 @@
                         confirmButtonText: '确定',
                       });
                   }
-
+                
               })
           },
       open3() {
@@ -175,18 +175,14 @@
                   this.$alert("查无此人",'个人信息', {
                     confirmButtonText: '确定',
                   });
-                }else{
-                    if(data.msg === "Empty")
-                      $alter("您输入的数据为空")
-                    if(data.msg === "Not found")
-                      $alter("查无此人")
-                  }
+                }
+              
             })
         }).catch(() => {
           //this.$message({
             //type: 'info',
             //message: '取消输入'
-          //});
+          //});       
         });
       }
     }
@@ -194,24 +190,5 @@
 </script>
 
 <style scoped>
-
-  .demo-ruleForm{
-    width: 320px;
-    box-sizing: border-box;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  @media all and (min-width: 600px) and (max-width: 685px){
-    .demo-ruleForm{
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  }
-  @media all and (min-width: 685px){
-    .demo-ruleForm{
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-  }
 
 </style>
