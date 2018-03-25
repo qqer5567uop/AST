@@ -13,7 +13,7 @@
         </el-col>
       </el-row>
     </header>
-    <div style="position: relative;height: 60px;width: 100%;">
+    <div style="position: relative;height: 0px;width: 100%;">
 
     </div>
 
@@ -103,13 +103,11 @@
     display: -ms-flexbox;
     display: flex;
     min-height: 800px;
-    border: solid 40px #E9ECF1;
-    background-color: #FCFCFC;
   }
   main .main-right{
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    background-color: #fff;
+    background-color: rgb(225, 224, 231);
   }
 </style>

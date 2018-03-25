@@ -1,4 +1,5 @@
 <template>
+<body background="/static/Department/6.jpg">
   <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="50%" style="width: 60%" class="demo-ruleForm">
 
     <el-form-item label="姓名" prop="name" style="padding-top: 40px">
@@ -47,6 +48,7 @@
       <el-button @click="open3">信息查询</el-button>
     </el-form-item>
   </el-form>
+</body>
 </template>
 
 
@@ -80,18 +82,18 @@
             { required: true, message: '请选择性别', trigger: 'change' }
           ],
           class1: [
-            { required: true, message: '请输入班级', trigger: 'change' }
+            { required: true, message: '请输入班级', trigger: 'blur' }
           ],
           uid: [
-            { type: 'text', required : true, message : '请输入学号', trigger: 'change' },
+            { type: 'text', required : true, message : '请输入学号', trigger: 'blur' },
             { min: 10,max: 10, message: '请输入正确的学号', trigger: 'blur'}
           ],
           phone: [
-            { type: 'number', required: true, message: '请输入手机号', trigger: 'change' },
+            { type: 'number', required: true, message: '请输入手机号', trigger: 'blur' },
             { min: 11, max: 11, message: '请输入正确的手机号', trigger: 'blur' }
           ],
           FirstExcept: [
-            { required: true, message: '请输入至少一个志愿', trigger: 'change' }
+            { required: true, message: '请输入至少一个志愿', trigger: 'blur' }
           ],
           AdjustedOrNot: [
             { required: true, message: '请选择是否调剂', trigger: 'change' }

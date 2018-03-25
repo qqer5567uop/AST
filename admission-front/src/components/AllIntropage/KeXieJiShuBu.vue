@@ -1,11 +1,58 @@
 <template>
   <div>
+    <body background="/static/Department/2.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
-    <el-carousel :interval="4000" type="card" height="400px">
-      <el-carousel-item v-for="item in 6" :key="item">
-        <h3>{{ item }}</h3>
-      </el-carousel-item>
-    </el-carousel>
+      <el-card :body-style="{ padding: '0px' }"  class="card" >
+        <div>
+		      <section>
+			      <h3>一.主要职能</h3>
+			        <p>&emsp;作为电信学院第一个与编程有关的部门，我们旨在给喜欢编程的同学一个分享经验、共同学习和进步的平台，通过类似于社团的方式丰富本院学生课外生活。在学习过程中，提升本院学生的编程能力和创新意识。同时也旨在培养出一批可以给学院线上活动提供技术支持的学生。</p>
+		      </section>
+		      <section>
+			      <h3>二.工作简介</h3>
+			      <p>
+				    <ul type="disc">
+					    <li>首要工作<br>
+						    坚持学习编程，不断提高自己的技术和创新思维，学习由任务及项目驱动。在有一定技术基础后为学生会提供技术支持，<br>
+						    比如搭建招新网站、编写并维护学生管理系统等等。每一届的部员将担任下一届部员的导师，带领他们学习编程与工作。
+					    </li>
+					    <li>学习计划<br>
+						    开始一段时间统一学习C语言的基本工具（git等）&emsp;,&emsp;在有一定基础后根据兴趣选择方向学习（包括学习新的语言）。
+					    </li>
+					    <li>
+					    	目前方向<br>
+					    	<ul type="square">
+							<li>
+								IT(计算机底层技术，算法，Linux,CUDA,并行计算);
+							</li>
+							<li>
+								移动端开发（Android,ios,React Native）;
+							</li>
+							<li>
+								Web开发（前端网站，后台服务器，微信公众号开发，微信小程序）;
+							</li>
+							<li>
+								AI：（深度学习，机器学习，大数据）;
+							</li>
+						</ul>
+					</li>
+			    </ul>
+			    </p>
+		    </section>
+	  	  <section>
+			    <h3>三.部门理念</h3>
+			    <p>
+			    <ul type="circle">
+				    <li>保持对计算机、互联网相关技术的兴趣</li>
+					  <li>坚持学习新的知识</li>
+					  <li>敢于独立解决问题</li>
+				  </ul>
+		    	</p>
+		    </section>
+	    </div><br/>
+      </el-card>
+      <br/><br/>
+    </body>
   </div>
 </template>
 
@@ -28,20 +75,12 @@
 </script>
 
 <style scoped>
-  .el-carousel__item h3 {
-    color: #475669;
-    font-size: 14px;
-    opacity: 0.75;
-    line-height: 200px;
-    margin: 0;
-  }
-
-  .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
-  }
-
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
+  .card{
+    border-radius: 20px;
+    margin: 60px;
+    width: 85%;
+    height: 85%;
+    float: center;
   }
 
 </style>

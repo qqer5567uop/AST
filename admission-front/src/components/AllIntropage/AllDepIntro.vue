@@ -1,7 +1,7 @@
 <template>
   <div>
+    <body background="/static/Department/3.jpg">
     <el-row class="row" id="card">
-
       <el-card :body-style="{ padding: '0px' }"  class="card" >
         <div style="padding: 6px;text-align:center;">
           <span v-on:click="handleCard('KeXieJiShuBu')"><img src="/static/Department/AST.jpg" class="image">科协技术部</span>
@@ -144,6 +144,7 @@
 
 
     </el-row>
+    </body>
   </div>
 </template>
 
@@ -154,7 +155,7 @@
     components: {ElRow},
     data() {
       return {
-          images:[{src:"./static/AST.jpg"}]
+
       };
     },
     created: function(){
@@ -246,5 +247,8 @@
 
   .clearfix:after {
     clear: both
+  }
+  .background{
+
   }
 </style>

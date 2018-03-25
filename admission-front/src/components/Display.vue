@@ -1,9 +1,13 @@
 <template>
+  <body background="/static/Department/2.jpg">
+  <br/><br/><br/><br/><br/>
   <el-carousel :interval="4000" type="card" height="400px">
     <el-carousel-item v-for="item in 6" :key="item">
       <h3>{{ item }}</h3>
     </el-carousel-item>
   </el-carousel>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  </body>
 </template>
 
 <script>
