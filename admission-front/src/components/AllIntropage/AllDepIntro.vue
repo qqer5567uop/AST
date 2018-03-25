@@ -3,9 +3,9 @@
     <el-row class="row" id="card">
 
       <el-card :body-style="{ padding: '50px' }"  class="card" >
-        <img src="" class="image">
+        <img src="/static/zppt2015.jpg" class="image">
         <div style="padding: 14px;">
-          <button v-on:click="handleCard('KeXie')">部门1</button>
+          <button v-on:click="handleCard('KeXie')">科协技术部</button>
         </div>
       </el-card>
 
