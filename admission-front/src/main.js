@@ -5,9 +5,10 @@ import App from './App'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import axios from 'axios'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import routeConfig from './router/index'
+import 'lib-flexible'
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false

@@ -13,7 +13,7 @@
         </el-col>
       </el-row>
     </header>
-    <div style="position: relative;height: 60px;width: 100%;">
+    <div style="position: relative;height: 60px;width: 0%;">
 
     </div>
 
@@ -81,7 +81,7 @@
   /* 头部导航 */
   header{
     z-index: 1000;
-    min-width: 1200px;
+    min-width: 0%;
     transition: all 0.5s ease;
     border-top: solid 4px #3091F2;
     background-color: #fff;
@@ -94,7 +94,7 @@
     right: 0;
   }
   header .el-menu-demo{
-    padding-left: 400px!important;
+    padding-left: 65%!important;
   }
 
   /* 主内容区 */
@@ -102,8 +102,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 800px;
-    border: solid 40px #E9ECF1;
+    min-height: 100%;
+    border: solid 100% #E9ECF1;
     background-color: #FCFCFC;
   }
   main .main-right{
