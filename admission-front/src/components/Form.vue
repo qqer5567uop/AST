@@ -1,5 +1,5 @@
 <template>
-  <el-form :model="ruleForm" :rules="rules"  ref="ruleForm" label-width="30%" style="width: 400px;margin-right: 10%" class="demo-ruleForm">
+  <el-form :model="ruleForm" :rules="rules"  ref="ruleForm" label-width="30%" class="demo-ruleForm">
 
     <el-form-item class="form_item" label="姓名" prop="name" style="padding-top: 40px">
       <el-input  v-model="ruleForm.name"></el-input>
@@ -141,7 +141,7 @@
                         confirmButtonText: '确定',
                       });
                   }
-                
+
               })
           },
       open3() {
@@ -165,7 +165,6 @@
                   alert(data2,'个人信息', {
                     confirmButtonText: '确定',
                   });
-<<<<<<< HEAD
                 }
                   if(data1.msg === "Get Data Error"){
                   this.$alert("您输入的数据格式有误，请重新输入",'个人信息', {
@@ -176,16 +175,12 @@
                   this.$alert("查无此人",'个人信息', {
                     confirmButtonText: '确定',
                   });
-                }
-              
-=======
                 }else{
                     if(data.msg === "Empty")
                       $alter("您输入的数据为空")
                     if(data.msg === "Not found")
                       $alter("查无此人")
                   }
->>>>>>> b4551a74e12e1937b0b0d0ac0d9e1409a7dbd3fd
             })
         }).catch(() => {
           //this.$message({
@@ -199,8 +194,24 @@
 </script>
 
 <style scoped>
+
   .demo-ruleForm{
-    width: 400px;
+    width: 320px;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @media all and (min-width: 600px) and (max-width: 685px){
+    .demo-ruleForm{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  @media all and (min-width: 685px){
+    .demo-ruleForm{
+      margin-left: 25%;
+      margin-right: 25%;
+    }
   }
 
 </style>
