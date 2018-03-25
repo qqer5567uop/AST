@@ -1,5 +1,5 @@
 <template>
-  <el-form :model="ruleForm" :rules="rules"  ref="ruleForm" label-width="30%" class="demo-ruleForm">
+  <el-form :model="ruleForm" :rules="rules"  ref="ruleForm" label-position="top" label-width="30%" class="demo-ruleForm">
 
     <el-form-item class="form_item" label="姓名" prop="name" style="padding-top: 40px">
       <el-input  v-model="ruleForm.name"></el-input>
@@ -30,7 +30,7 @@
     <el-form-item label="第二志愿" prop="SecondExcept">
       <el-input v-model="ruleForm.SecondExcept"></el-input>
     </el-form-item>
-    <el-form-item label="是否服从调剂" prop="AdjustedOrNot">
+    <el-form-item label="服从调剂" prop="AdjustedOrNot">
       <el-radio-group v-model="ruleForm.AdjustedOrNot">
         <el-radio label="是"></el-radio>
         <el-radio label="否"></el-radio>
@@ -196,18 +196,18 @@
 <style scoped>
 
   .demo-ruleForm{
-    width: 320px;
+    width: 280px;
     box-sizing: border-box;
-    margin-left: 5%;
+    margin-left: 0;
     margin-right: 5%;
   }
-  @media all and (min-width: 600px) and (max-width: 685px){
+  @media all and (min-width: 320px) and (max-width: 1024px){
     .demo-ruleForm{
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: 15%;
+      margin-right: 15%;
     }
   }
-  @media all and (min-width: 685px){
+  @media all and (min-width: 1024px){
     .demo-ruleForm{
       margin-left: 25%;
       margin-right: 25%;
