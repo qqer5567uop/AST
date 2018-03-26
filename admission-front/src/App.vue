@@ -4,7 +4,7 @@
     <header class="header">
       <el-row>
         <el-col :span="30">
-          <el-menu default-active="4" class="el-menu-demo" mode="horizontal" @select="handleMenu">
+          <el-menu default-active="4" class="el-menu-demo" mode="horizontal" @select="handleMenu"  background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
             <el-menu-item index="home">了解我们</el-menu-item>
             <el-menu-item index="depintro">部门介绍</el-menu-item>
             <el-menu-item index="display">风向展示</el-menu-item>
@@ -83,7 +83,7 @@
     min-width: 1200px;
     transition: all 0.5s ease;
     border-top: solid 4px rgb(37, 79, 121);
-    background-color: rgb(252, 249, 249);
+    background-color:#545c64;
   }
   header.header-fixed{
     position: fixed;
@@ -92,7 +92,7 @@
     right: 0;
   }
   header .el-menu-demo{
-    padding-left: 400px!important;
+    padding-left: 520px!important;
   }
 
   /* 主内容区 */
