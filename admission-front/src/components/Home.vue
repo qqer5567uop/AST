@@ -1,13 +1,10 @@
 <template>
   <div class="home" >
     <body background="/static/Department/7.jpg">
-    <div><h1>学生会</h1></div>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <div>
-      <p>
+      <h1>
         学生会介绍
-      </p>
-    </div>
+      </h1>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </body>
   </div>
@@ -24,7 +21,5 @@
 </script>
 
 <style scoped>
-  template{
-    /*background-image: ;*/
-  }
+
 </style>

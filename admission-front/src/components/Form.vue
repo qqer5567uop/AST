@@ -46,6 +46,7 @@
       <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
       <el-button @click="resetForm('ruleForm')">重置</el-button>
       <el-button @click="open3">信息查询</el-button>
+      <br/><br/><br/><br/>
     </el-form-item>
   </el-form>
 </body>
@@ -85,7 +86,7 @@
             { required: true, message: '请输入班级', trigger: 'blur' }
           ],
           uid: [
-            { type: 'text', required : true, message : '请输入学号', trigger: 'blur' },
+            { required : true, message : '请输入学号', trigger: 'blur' },
             { min: 10,max: 10, message: '请输入正确的学号', trigger: 'blur'}
           ],
           phone: [

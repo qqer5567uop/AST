@@ -16,7 +16,6 @@
     <div style="position: relative;height: 0px;width: 100%;">
 
     </div>
-
     <main>
       <!-- 右侧主内容区 -->
       <div  class="main-right" >
@@ -83,9 +82,8 @@
     z-index: 1000;
     min-width: 1200px;
     transition: all 0.5s ease;
-    border-top: solid 4px #3091F2;
-    background-color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12),0 0 6px 0 rgba(0,0,0,.04);
+    border-top: solid 4px rgb(37, 79, 121);
+    background-color: rgb(252, 249, 249);
   }
   header.header-fixed{
     position: fixed;
@@ -108,6 +106,6 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    background-color: rgb(225, 224, 231);
+    background-color: rgb(244, 243, 247);
   }
 </style>
