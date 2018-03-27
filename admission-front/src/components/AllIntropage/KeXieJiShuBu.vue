@@ -1,30 +1,59 @@
 <template>
   <div>
-    <body background="/static/Department/2.jpg">
+    <body background="/static/BackGround/bk12.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
-      <el-card :body-style="{ padding: '0px' }"  class="card" >             
-          <ul type="disc">
-            <li>优秀的我们</li>
-            <br>电信学院辩论队成立于2010年，是一支年轻的队伍，但实力却不容小觑。短短几年内，该队伍已经取得了喻晓亚军，新生杯亚军，喻晓四强这样的好成绩，以优秀的辩论成绩证明，电信饺子们不仅能做好技术，对辩论了同样在行<br>&emsp;
-            <li>环境氛围</li>
-            至于男女比~脱单率~队内氛围嘛……只能说，不能再好了！<br>（毕竟这是一个可以和全校各个年级的辩友聊人生谈理想顺便互留联系方式的正规组织嘛)<br>hohohohohohohoho!<br>&emsp;
-            <li>辩论队给我们带来了什么？</li>
-            <ul type="square">
-              <li>更加清晰、系统的思路，更加敏捷的思维，更加全面的考虑问题的视角;</li>
-              <li>更加广阔的知识面；（看着电脑里满满的论文嘿嘿一笑）</li>
-              <li>倾听他人观点并快速总结、归纳、分析的能力，更好的临场反应能力;(若用于撩妹/撩汉，同学你的前途将一片光明)</li>
-              <li>团队协作能力及口语交际能力；(每次的写稿都是一次博弈)</li>
-              <section>
-                <h3>最最最最重要的是........</h3>
-                <p>你将收获超级丰富的课余生活，一群志同道合的好友，优秀的学长以及美丽的学姐（没错就是这样），还有大佬（辩论学习！）粗壮的大腿！</p>
-                <h3>心动了吗？快来加入我们吧！</h3>
-              </section>
-		      	</ul>
-		      </ul>
+      <el-card :body-style="{ padding: '0px' }"  class="card" >
+        <div>
+		      <section>
+			      <h3>一.主要职能</h3>
+			        <p>&emsp;作为电信学院第一个与编程有关的部门，我们旨在给喜欢编程的同学一个分享经验、共同学习和进步的平台，通过类似于社团的方式丰富本院学生课外生活。在学习过程中，提升本院学生的编程能力和创新意识。同时也旨在培养出一批可以给学院线上活动提供技术支持的学生。</p>
+		      </section>
+		      <section>
+			      <h3>二.工作简介</h3>
+			      <p>
+				    <ul type="disc">
+					    <li>首要工作<br>
+						    坚持学习编程，不断提高自己的技术和创新思维，学习由任务及项目驱动。在有一定技术基础后为学生会提供技术支持，<br>
+						    比如搭建招新网站、编写并维护学生管理系统等等。每一届的部员将担任下一届部员的导师，带领他们学习编程与工作。
+					    </li>
+					    <li>学习计划<br>
+						    开始一段时间统一学习C语言的基本工具（git等）&emsp;,&emsp;在有一定基础后根据兴趣选择方向学习（包括学习新的语言）。
+					    </li>
+					    <li>
+					    	目前方向<br>
+					    	<ul type="square">
+							<li>
+								IT(计算机底层技术，算法，Linux,CUDA,并行计算);
+							</li>
+							<li>
+								移动端开发（Android,ios,React Native）;
+							</li>
+							<li>
+								Web开发（前端网站，后台服务器，微信公众号开发，微信小程序）;
+							</li>
+							<li>
+								AI：（深度学习，机器学习，大数据）;
+							</li>
+						</ul>
+					</li>
+			    </ul>
+			    </p>
+		    </section>
+	  	  <section>
+			    <h3>三.部门理念</h3>
+			    <p>
+			    <ul type="circle">
+				    <li>保持对计算机、互联网相关技术的兴趣</li>
+					  <li>坚持学习新的知识</li>
+					  <li>敢于独立解决问题</li>
+				  </ul>
+		    	</p>
+		    </section>
+	    </div><br/>
       </el-card>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/>
     </body>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -53,5 +82,5 @@
     height: 85%;
     float: center;
   }
-  div{font-family: "微软雅黑"}
+
 </style>

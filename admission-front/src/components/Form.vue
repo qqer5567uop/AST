@@ -1,7 +1,8 @@
 <template>
-  <el-form :model="ruleForm" :rules="rules"  ref="ruleForm" label-position="top" label-width="30%" class="demo-ruleForm">
+<body background="/static/BackGround/bk15.jpg">
+  <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="50%" style="width: 60%" class="demo-ruleForm">
 
-    <el-form-item class="form_item" label="姓名" prop="name" style="padding-top: 40px">
+    <el-form-item label="姓名" prop="name" style="padding-top: 40px">
       <el-input  v-model="ruleForm.name"></el-input>
     </el-form-item>
 
@@ -30,7 +31,7 @@
     <el-form-item label="第二志愿" prop="SecondExcept">
       <el-input v-model="ruleForm.SecondExcept"></el-input>
     </el-form-item>
-    <el-form-item label="服从调剂" prop="AdjustedOrNot">
+    <el-form-item label="是否服从调剂" prop="AdjustedOrNot">
       <el-radio-group v-model="ruleForm.AdjustedOrNot">
         <el-radio label="是"></el-radio>
         <el-radio label="否"></el-radio>
@@ -41,12 +42,14 @@
       <el-input type="textarea" v-model="ruleForm.SelfIntroduction"></el-input>
     </el-form-item>
 
-    <el-form-item style="">
+    <el-form-item>
       <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
       <el-button @click="resetForm('ruleForm')">重置</el-button>
       <el-button @click="open3">信息查询</el-button>
+      <br/><br/><br/><br/>
     </el-form-item>
   </el-form>
+</body>
 </template>
 
 
@@ -80,18 +83,18 @@
             { required: true, message: '请选择性别', trigger: 'change' }
           ],
           class1: [
-            { required: true, message: '请输入班级', trigger: 'change' }
+            { required: true, message: '请输入班级', trigger: 'blur' }
           ],
           uid: [
-            { type: 'text', required : true, message : '请输入学号', trigger: 'change' },
+            { required : true, message : '请输入学号', trigger: 'blur' },
             { min: 10,max: 10, message: '请输入正确的学号', trigger: 'blur'}
           ],
           phone: [
-            { type: 'number', required: true, message: '请输入手机号', trigger: 'change' },
+            { type: 'number', required: true, message: '请输入手机号', trigger: 'blur' },
             { min: 11, max: 11, message: '请输入正确的手机号', trigger: 'blur' }
           ],
           FirstExcept: [
-            { required: true, message: '请输入至少一个志愿', trigger: 'change' }
+            { required: true, message: '请输入至少一个志愿', trigger: 'blur' }
           ],
           AdjustedOrNot: [
             { required: true, message: '请选择是否调剂', trigger: 'change' }
@@ -141,7 +144,7 @@
                         confirmButtonText: '确定',
                       });
                   }
-
+                
               })
           },
       open3() {
@@ -150,40 +153,13 @@
           cancelButtonText: '取消',
           inputPattern: /^U\d{9}\+\d{4}$/,
           inputErrorMessage: '学号格式不正确'
-        }).then(({value}) => {
-          this.$http({
-            url: '/InformationLookfor',
-            method: 'POST',
-            body: {
-              uidnph: value
-            }
-          })
-            .then((res) => {
-              let data1 = res.data
-              let data2 = "姓名：" + data1.name + "\n" + "性别：" + data1.sex + "\n" + "班级：" + data1.class + "\n" + "学号：" + data1.uid + "\n" + "手机号：" + data1.phone + "\n" + "第一志愿：" + data1.FirstExcept + "\n" + "第二志愿：" + data1.SecondExcept + "\n"
-              if (data1.msg === "Get Success") {
-                alert(data2, '个人信息', {
-                  confirmButtonText: '确定',
-                });
+        }).then(({ value }) => {
+            this.$http({
+              url: '/InformationLookfor',
+              method: 'POST',
+              body: {
+                uidnph: value
               }
-              if (data1.msg === "Get Data Error") {
-                this.$alert("您输入的数据格式有误，请重新输入", '个人信息', {
-                  confirmButtonText: '确定',
-                });
-              }
-              if (data1.msg === "Get Fail") {
-                this.$alert("查无此人", '个人信息', {
-                  confirmButtonText: '确定',
-                });
-
-              } else {
-                if (data.msg === "Empty")
-                  $alter("您输入的数据为空")
-                if (data.msg === "Not found")
-                  $alter("查无此人")
-              }
-
-
             })
             .then((res)=>{
                 let data1 = res.data
@@ -202,45 +178,20 @@
                   this.$alert("查无此人",'个人信息', {
                     confirmButtonText: '确定',
                   });
-                }else{
-                    if(data.msg === "Empty")
-                      $alter("您输入的数据为空")
-                    if(data.msg === "Not found")
-                      $alter("查无此人")
-                  }
-
+                }
+              
             })
         }).catch(() => {
           //this.$message({
-          //type: 'info',
-          //message: '取消输入'
-          //});
+            //type: 'info',
+            //message: '取消输入'
+          //});       
         });
-
       }
     }
   }
 </script>
 
 <style scoped>
-
-  .demo-ruleForm{
-    width: 280px;
-    box-sizing: border-box;
-    margin-left: 0;
-    margin-right: 5%;
-  }
-  @media all and (min-width: 320px) and (max-width: 1024px){
-    .demo-ruleForm{
-      margin-left: 15%;
-      margin-right: 15%;
-    }
-  }
-  @media all and (min-width: 1024px){
-    .demo-ruleForm{
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-  }
 
 </style>

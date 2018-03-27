@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div id="app">
+    <!-- 头部导航 -->
     <header class="header">
-
       <el-row>
-        <el-col :span="30" class="el-menu-demo">
-          <el-menu default-active="4"  mode="horizontal" @select="handleMenu">
+        <el-col :span="30">
+          <el-menu default-active="4" class="el-menu-demo" mode="horizontal" @select="handleMenu"  background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
             <el-menu-item index="home">了解我们</el-menu-item>
             <el-menu-item index="depintro">部门介绍</el-menu-item>
             <el-menu-item index="display">风向展示</el-menu-item>
@@ -13,19 +13,17 @@
         </el-col>
       </el-row>
     </header>
-
-    <div style="position: relative;height: 20px;width: 100%;">
+    <div style="position: relative;height: 0px;width: 100%;">
 
     </div>
-
     <main>
-      <div>
+      <!-- 右侧主内容区 -->
+      <div  class="main-right" >
         <transition name="fade">
           <router-view class="view"></router-view>
         </transition>
       </div>
     </main>
-
   </div>
 </template>
 
@@ -73,49 +71,41 @@
 
 
 <style>
+  body{margin: 0;}
+  #app {
+    min-width: 100%;
+    margin: 0 auto;
+    font-family: "Helvetica Neue","PingFang SC",Arial,sans-serif;
+  }
+  /* 头部导航 */
   header{
-    border-top: solid 4px #3091F2;
-    background-color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12),0 0 6px 0 rgba(0,0,0,.04);
-
-
-    width: 100%;
+    z-index: 1000;
+    min-width: 1200px;
+    transition: all 0.5s ease;
+    border-top: solid 4px rgb(37, 79, 121);
+    background-color:#545c64;
   }
+  header.header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  header .el-menu-demo{
+    padding-left: 520px!important;
+  }
+
+  /* 主内容区 */
   main{
-    background-color: #FCFCFC;
-    padding-right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 800px;
   }
-  .el-menu-demo{
-    margin-left: 5%;
-    margin-right: 5%;
+  main .main-right{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: rgb(244, 243, 247);
   }
-
-
-  @media all and (min-width: 320px) and (max-width: 1024px){
-    header{
-      width: 100%;
-
-    }
-    main{
-      margin-right: 10%;
-
-    }
-    .el-menu-demo{
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  }
-  @media all and (min-width: 1024px){
-    header{
-      width: 100%;
-
-    }
-
-    }
-    .el-menu-demo{
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-
-
 </style>
