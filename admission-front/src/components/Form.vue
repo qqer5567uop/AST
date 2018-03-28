@@ -1,6 +1,6 @@
 <template>
 <body background="/static/BackGround/bk5.jpg">
-  <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="50%" style="width: 60%" class="demo-ruleForm">
+  <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="30%" class="demo-ruleForm">
 
     <el-form-item label="姓名" prop="name" style="padding-top: 40px">
       <el-input  v-model="ruleForm.name"></el-input>
@@ -192,5 +192,31 @@
 </script>
 
 <style scoped>
+  body{
+    width: 100%;
+  }
+  .demo-ruleForm{
+    margin-right: 6%;
+    margin-left: 0;
+  }
+  @media all and (min-width: 400px)and (max-width: 560px){
+    .demo-ruleForm{
+      margin-right: 15%;
+      margin-left: 5%;
+    }
+
+  }
+  @media all and (min-width: 560px)and (max-width: 900px){
+    .demo-ruleForm{
+      margin-right: 22%;
+      margin-left: 16%;
+    }
+  }
+  @media all and (min-width: 900px){
+    .demo-ruleForm{
+      margin-right: 30%;
+      margin-left: 25%;
+    }
+  }
 
 </style>

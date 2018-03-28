@@ -28,47 +28,45 @@
 </template>
 
 <script>
-  import Vue from 'vue'
-  import Element from 'element-ui'
-  import 'element-ui/lib/theme-chalk/index.css'
+import Vue from 'vue'
+import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
-  Vue.use(Element)
+Vue.use(Element)
 
-  export default {
-    name: 'app',
-    data: function (){
-      return {
-        active:true
+export default {
+  name: 'app',
+  data: function () {
+    return {
+      active: true
+    }
+  },
+  created: function () {
+    this.$router.push('')
+  },
+  methods: {
+    handleMenu: function (key) {
+      switch (key) {
+        case 'home':
+          this.$router.push('/Home')
+          break
+        case 'depintro':
+          this.$router.push('/AllDepintro')
+          break
+        case 'display':
+          this.$router.push('/Display')
+          break
+        case 'form':
+          this.$router.push('/Form')
+          break
+        default:
+          this.$router.push('/Home')
       }
-    },
-    created: function(){
-      this.$router.push('');
-    },
-    methods: {
-      handleMenu:function (key) {
-        switch (key) {
-          case 'home':
-            this.$router.push('/Home');
-            break;
-          case 'depintro':
-            this.$router.push('/AllDepintro');
-            break;
-          case 'display':
-            this.$router.push('/Display');
-            break;
-          case 'form':
-            this.$router.push('/Form');
-            break;
-          default:
-            this.$router.push('/Home');
-        }
-        console.log(key)
-
-      }
+      console.log(key)
     }
   }
+}
 </script>
-
 
 <style>
   body{margin: 0;}
@@ -139,9 +137,3 @@
   }
 
 </style>
-
-
-
-
-
-
