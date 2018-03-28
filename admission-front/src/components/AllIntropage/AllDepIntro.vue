@@ -28,15 +28,15 @@
         <div style="padding: 6px;text-align:center;">
           <span v-on:click="handleCard('XinWenZhongXin')"><img src="/static/Department/news.gif" class="image">新闻中心</span>
         </div>
-      </el-card>   
+      </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <br/> 
+          <br/>
           <span v-on:click="handleCard('BanGongShi')"><img src="/static/Department/office.gif" class="image">办公室</span>
         </div>
-      </el-card>  
+      </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
@@ -122,7 +122,7 @@
         <div style="padding: 6px;text-align:center;">
           <span v-on:click="handleCard('XinLiBu')"><img src="/static/Department/xinli.jpg" class="image">心理部</span>
         </div>
-      </el-card>                          
+      </el-card>
 
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
@@ -130,7 +130,7 @@
           <br/>
           <span v-on:click="handleCard('SheHuiShiJianBu')"><img src="/static/Department/sheshi.gif" class="image">社会实践部</span>
         </div>
-      </el-card> 
+      </el-card>
 
 
       <el-card :body-style="{ padding: '0px' }" class="card">
@@ -139,7 +139,7 @@
           <br/>
           <span v-on:click="handleCard('XuanChuanBu')"><img src="/static/Department/xuanchuan.gif" class="image">宣传部</span>
         </div>
-      </el-card>    
+      </el-card>
 
 
     </el-row><br/><br/><br/><br/>
@@ -228,24 +228,45 @@
 
 <style scoped>
   .card{
-    border-radius: 20px;
-    margin: 60px;
-    width:110px;
-    height: 130px;
+    border-radius: 10px;
+    margin: 10px;
+    width:80px;
+    height: 90px;
     float: left;
   }
-  .bottom {
-    margin-bottom: 0;
-    margin-right: 0;
-    line-height: 10px;
-  }
+
   .image {
     width: 100%;
     display: block;
   }
 
-  .clearfix:after {
-    clear: both
+  @media all and (min-width: 330px)and (max-width: 420px){
+    .card{
+      border-radius: 15px;
+      margin: 15px;
+      width:90px;
+      height: 110px;
+      float: left;
+    }
   }
-  
+
+  @media all and (min-width: 420px)and (max-width: 800px){
+    .card{
+      border-radius: 15px;
+      margin: 30px;
+      width:100px;
+      height: 120px;
+      float: left;
+    }
+  }
+  @media all and (min-width: 800px){
+    .card{
+      border-radius: 20px;
+      margin: 50px;
+      width:110px;
+      height: 130px;
+      float: left;
+    }
+  }
+
 </style>
