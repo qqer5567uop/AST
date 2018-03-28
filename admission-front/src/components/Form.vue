@@ -44,7 +44,6 @@
 
     <el-form-item>
       <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
-      <el-button @click="resetForm('ruleForm')">重置</el-button>
       <el-button @click="open3">信息查询</el-button>
       <br/><br/><br/><br/>
     </el-form-item>
@@ -72,7 +71,7 @@
           SecondExcept: '',
           AdjustedOrNot: '',
           SelfIntroduction: '',
-          msg: '学生会招新'
+          //msg: '学生会招新'
         },
         rules: {
           name: [

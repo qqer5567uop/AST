@@ -1,6 +1,6 @@
 <template>
   <div>
-    <body background="/static/Department/2.jpg">
+    <body background="/static/BackGround/bk12.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
       <el-card :body-style="{ padding: '0px' }"  class="card" >             
           <section>
