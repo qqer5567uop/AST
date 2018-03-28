@@ -90,7 +90,7 @@
             { min: 10,max: 10, message: '请输入正确的学号', trigger: 'blur'}
           ],
           phone: [
-            { type: 'number', required: true, message: '请输入手机号', trigger: 'blur' },
+            { required: true, message: '请输入手机号', trigger: 'blur' },
             { min: 11, max: 11, message: '请输入正确的手机号', trigger: 'blur' }
           ],
           FirstExcept: [

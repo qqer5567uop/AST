@@ -93,8 +93,6 @@ function _validateStudentData(StudentData) {
 		return false;
 	if (StudentData.FirstExcept === undefined || StudentData.FirstExcept == "")
 		return false;
-	if (StudentData.SecondExcept === undefined || StudentData.SecondExcept == "")
-		return false;
 	if (StudentData.AdjustedOrNot === undefined || StudentData.AdjustedOrNot == "")
 		return false;
 	if ((StudentData.SelfIntroduction === undefined || StudentData.SelfIntroduction == "") || ((StudentData.SelfIntroduction).length > 300))
