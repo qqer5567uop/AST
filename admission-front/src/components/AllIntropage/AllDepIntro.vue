@@ -228,10 +228,11 @@
 
 <style scoped>
   .card{
+    font-size: small;
     border-radius: 10px;
     margin: 10px;
     width:80px;
-    height: 90px;
+    height: 100px;
     float: left;
   }
 
@@ -252,6 +253,7 @@
 
   @media all and (min-width: 420px)and (max-width: 800px){
     .card{
+      font-size: medium;
       border-radius: 15px;
       margin: 30px;
       width:100px;
@@ -261,6 +263,7 @@
   }
   @media all and (min-width: 800px){
     .card{
+      font-size: medium;
       border-radius: 20px;
       margin: 50px;
       width:110px;

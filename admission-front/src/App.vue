@@ -87,8 +87,8 @@
     padding-right: 3%;
   }
   header .el-menu-demo{
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 0;
+    padding-right: 0;
 
   }
 
@@ -98,20 +98,33 @@
     margin-right: 0;
     min-height: 800px;
   }
-  @media all and (min-width: 460px)and (max-width: 800px){
+  @media all and (min-width: 400px)and (max-width: 560px){
+
+    .item{
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+    header .el-menu-demo{
+      padding-left: 9%;
+      padding-right: 9%;
+
+    }
+
+  }
+  @media all and (min-width: 560px)and (max-width: 900px){
 
     .item{
       padding-left: 4%;
       padding-right: 4%;
     }
     header .el-menu-demo{
-      padding-left: 12%;
-      padding-right: 12%;
+      padding-left: 11%;
+      padding-right: 11%;
 
     }
 
   }
-  @media all and (min-width: 800px){
+  @media all and (min-width: 900px){
 
     .item{
       padding-left: 6%;
