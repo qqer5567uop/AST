@@ -1,5 +1,5 @@
 <template>
-<body background="/static/Department/6.jpg">
+<body background="/static/BackGround/bk5.jpg">
   <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="50%" style="width: 60%" class="demo-ruleForm">
 
     <el-form-item label="姓名" prop="name" style="padding-top: 40px">

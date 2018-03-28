@@ -1,6 +1,6 @@
 <template>
   <div>
-    <body background="/static/Department/3.jpg">
+    <body background="/static/BackGround/bk4.jpg">
     <el-row class="row" id="card">
       <el-card :body-style="{ padding: '0px' }"  class="card" >
         <div style="padding: 6px;text-align:center;">
@@ -142,7 +142,7 @@
       </el-card>    
 
 
-    </el-row>
+    </el-row><br/><br/><br/><br/>
     </body>
   </div>
 </template>
