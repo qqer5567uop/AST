@@ -3,7 +3,7 @@
     <body background="/static/BackGround/bk12.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
       <el-card :body-style="{ padding: '0px' }"  class="card" >
-        <div>             
+        <div>
           <section>
             <h3>一.部门定位</h3>
             <p>礼仪队服务于本校或本院多种大型活动（如晚会、颁奖典礼等），在其中担任礼仪角色，负责迎接、引导、服务出席该活动的领导嘉宾，并承担上台颁奖任务
@@ -46,13 +46,44 @@
 </script>
 
 <style scoped>
-  .card{
-    border-radius: 20px;
-    margin: 60px;
-    width: 85%;
-    height: 85%;
-    float: center;
-  }
   div{font-family: "微软雅黑"}
-	aside{color: crimson}
+  aside{color: crimson}
+  .card{
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+  }
+
+  @media all and (min-width: 330px)and (max-width: 420px){
+    .card{
+      border-radius: 10px;
+      margin-left: 16px;
+      margin-right: 16px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media all and (min-width: 420px)and (max-width: 800px){
+    .card{
+      border-radius: 20px;
+      margin-left: 35px;
+      margin-right: 35px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media all and (min-width: 800px){
+    .card{
+      border-radius: 20px;
+      margin-left: 60px;
+      margin-right: 60px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
 </style>

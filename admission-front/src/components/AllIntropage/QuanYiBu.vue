@@ -2,7 +2,7 @@
   <div>
     <body background="/static/BackGround/bk12.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
-      <el-card :body-style="{ padding: '0px' }"  class="card" >             
+      <el-card :body-style="{ padding: '0px' }"  class="card" >
           <ul type="disc">
             <section>
               <h3>一.部门简介</h3>
@@ -38,12 +38,43 @@
 </script>
 
 <style scoped>
-.card{
-    border-radius: 20px;
-    margin: 60px;
-    width: 85%;
-    height: 85%;
-    float: center;
-  }
   div{font-family: "微软雅黑"}
+  .card{
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+  }
+
+  @media all and (min-width: 330px)and (max-width: 420px){
+    .card{
+      border-radius: 10px;
+      margin-left: 16px;
+      margin-right: 16px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media all and (min-width: 420px)and (max-width: 800px){
+    .card{
+      border-radius: 20px;
+      margin-left: 35px;
+      margin-right: 35px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media all and (min-width: 800px){
+    .card{
+      border-radius: 20px;
+      margin-left: 60px;
+      margin-right: 60px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
 </style>

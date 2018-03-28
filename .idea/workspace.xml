@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4443be24-7478-4d54-8cbb-3d29177367f3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/admission-front/package-lock.json" afterPath="$PROJECT_DIR$/admission-front/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/BanGongShi.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/BanGongShi.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/BianLunDui.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/BianLunDui.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXieJiShuBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXieJiShuBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXieSaiShiBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXieSaiShiBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/LiYiDui.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/LiYiDui.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/NvShengBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/NvShengBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/QiMingShuWu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/QiMingShuWu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/QuanYiBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/QuanYiBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/SheHuiShiJianBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/SheHuiShiJianBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/WaiLianBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/WaiLianBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/WenYiBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/WenYiBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XiaoHongMao.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XiaoHongMao.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XinLiBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XinLiBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XinWenZhongXin.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XinWenZhongXin.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XuanChuanBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XuanChuanBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XueShuBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XueShuBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/ZhuChiRenDui.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/ZhuChiRenDui.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/ZuZhiBu.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/AllIntropage/ZuZhiBu.vue" />
+      <change beforePath="$PROJECT_DIR$/admission-front/src/components/Form.vue" afterPath="$PROJECT_DIR$/admission-front/src/components/Form.vue" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Form.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admission-front/src/components/Form.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="n#script#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="front-end" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllDept.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/main.js" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/Home.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/Display.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/DepIntro.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/Readme.md" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllDepIntro.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/router/index.js" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXie.vue" />
+        <option value="$PROJECT_DIR$/admission-back/views/error.ejs" />
+        <option value="$PROJECT_DIR$/admission-back/test/send_test.js" />
+        <option value="$PROJECT_DIR$/admission-front/src/App.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/AllDepIntro.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXieJiShuBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/BanGongShi.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/BianLunDui.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXieSaiShiBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/LiYiDui.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/SheHuiShiJianBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XiaoHongMao.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XinLiBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XinWenZhongXin.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XuanChuanBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/ZuZhiBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/ZhuChiRenDui.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/XueShuBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/WenYiBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/WaiLianBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/QuanYiBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/QiMingShuWu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/AllIntropage/NvShengBu.vue" />
+        <option value="$PROJECT_DIR$/admission-front/src/components/Form.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/admission-front/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="168" />
+    <option name="y" value="-4" />
+    <option name="width" value="1342" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AST" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AST" type="462c0819:PsiDirectoryNode" />
+              <item name="admission-front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AST" type="462c0819:PsiDirectoryNode" />
+              <item name="admission-front" type="462c0819:PsiDirectoryNode" />
+              <item name="Icon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AST" type="462c0819:PsiDirectoryNode" />
+              <item name="admission-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AST" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AST" type="462c0819:PsiDirectoryNode" />
+              <item name="admission-front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/admission-back/node_modules/mocha" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.0.0-pre" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admission-front/src/components/AllIntropage" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/admission-front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4443be24-7478-4d54-8cbb-3d29177367f3" name="Default" comment="" />
+      <created>1521422049425</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1521422049425</updated>
+      <workItem from="1521422051398" duration="123000" />
+      <workItem from="1521470021384" duration="6484000" />
+      <workItem from="1521510877118" duration="17404000" />
+      <workItem from="1521528950697" duration="7288000" />
+      <workItem from="1521558288156" duration="233000" />
+      <workItem from="1521619077547" duration="3831000" />
+      <workItem from="1521622956849" duration="387000" />
+      <workItem from="1521867686720" duration="2473000" />
+      <workItem from="1521878580479" duration="1515000" />
+      <workItem from="1521880159668" duration="11000" />
+      <workItem from="1521984024212" duration="3599000" />
+      <workItem from="1522242214751" duration="7511000" />
+    </task>
+    <task id="LOCAL-00001" summary="add page of all">
+      <created>1521523924982</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521523924982</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add page of all">
+      <created>1521984190349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521984190349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="57820000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22767204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11782946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add page of all" />
+    <option name="LAST_COMMIT_MESSAGE" value="add page of all" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/Readme.md" />
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/Front.vue" />
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXie.vue" />
+    <entry file="file://$PROJECT_DIR$/admission-back/public/stylesheets/style.css" />
+    <entry file="file://$PROJECT_DIR$/admission-back/models/information_db.js" />
+    <entry file="file://$PROJECT_DIR$/admission-back/configs/config_set.json" />
+    <entry file="file://$PROJECT_DIR$/admission-back/bin/www" />
+    <entry file="file://$PROJECT_DIR$/admission-back/README.md" />
+    <entry file="file://$PROJECT_DIR$/admission-back/app.js" />
+    <entry file="file://$PROJECT_DIR$/admission-back/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/admission-back/views/index.ejs" />
+    <entry file="file://$PROJECT_DIR$/admission-back/views/error.ejs" />
+    <entry file="file://$PROJECT_DIR$/admission-back/package.json" />
+    <entry file="file://$PROJECT_DIR$/admission-back/test/send_test.js" />
+    <entry file="file://$PROJECT_DIR$/admission-back/routes/users.js" />
+    <entry file="file://$PROJECT_DIR$/admission-back/routes/lookfor.js" />
+    <entry file="file://$PROJECT_DIR$/admission-back/routes/index.js" />
+    <entry file="file://$PROJECT_DIR$/admission-back/routes/information.js" />
+    <entry file="file://$PROJECT_DIR$/admission-front/Icon/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="3" column="440" lean-forward="false" selection-start-line="3" selection-start-column="440" selection-end-line="3" selection-end-column="440" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="54" column="7" lean-forward="false" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/AllDepIntro.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="242" column="2" lean-forward="true" selection-start-line="242" selection-start-column="2" selection-end-line="269" selection-end-column="3" />
+          <folding>
+            <element signature="n#script#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/BanGongShi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/BianLunDui.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/ZuZhiBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/ZhuChiRenDui.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/XueShuBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/XuanChuanBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="865">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/XinWenZhongXin.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="115" column="8" lean-forward="false" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/WaiLianBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/QuanYiBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/QiMingShuWu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/NvShengBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/LiYiDui.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXieSaiShiBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1257">
+          <caret line="72" column="26" lean-forward="true" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/SheHuiShiJianBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1023">
+          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/WenYiBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/XiaoHongMao.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1077">
+          <caret line="93" column="8" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/XinLiBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="n#script#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/AllIntropage/KeXieJiShuBu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="86" column="2" lean-forward="false" selection-start-line="86" selection-start-column="2" selection-end-line="113" selection-end-column="3" />
+          <folding>
+            <element signature="n#script#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/Display.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admission-front/src/components/Form.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="n#script#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -3,7 +3,7 @@
     <body background="/static/BackGround/bk12.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
       <el-card :body-style="{ padding: '0px' }"  class="card" >
-        <div>             
+        <div>
           <section>
             <h3 >一.主要职能</h3>
             <ul><p>学术部作为学生会的一个核心部门，肩负着规范全院学习秩序，调动学习氛围，搞好学风建设，丰富学生课余生活的重任。<br/>因此学术部的目标是引领同学们在学习中认识自己，在学习中发展自己，在学习中成就自己。<br/>学术部将通过组织学术性讲座，采访国奖大神等各项活动的宣传与举办，为同学们提供一个与学术进一步接触的平台。
@@ -52,17 +52,47 @@
   }
 </script>
 
-
 <style scoped>
-   .card{
-    border-radius: 20px;
-    margin: 60px;
-    width: 85%;
-    height: 85%;
-    float: center;
-  }
   div{
     font-family: "微软雅黑"
   }
-	aside{color: rgb(236, 22, 15)}
+  aside{color: rgb(236, 22, 15)}
+  .card{
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: auto;
+  }
+
+  @media all and (min-width: 330px)and (max-width: 420px){
+    .card{
+      border-radius: 10px;
+      margin-left: 16px;
+      margin-right: 16px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media all and (min-width: 420px)and (max-width: 800px){
+    .card{
+      border-radius: 20px;
+      margin-left: 35px;
+      margin-right: 35px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media all and (min-width: 800px){
+    .card{
+      border-radius: 20px;
+      margin-left: 60px;
+      margin-right: 60px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
 </style>

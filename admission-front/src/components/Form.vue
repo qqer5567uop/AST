@@ -143,7 +143,7 @@
                         confirmButtonText: '确定',
                       });
                   }
-                
+
               })
           },
       open3() {
@@ -178,13 +178,13 @@
                     confirmButtonText: '确定',
                   });
                 }
-              
+
             })
         }).catch(() => {
           //this.$message({
             //type: 'info',
             //message: '取消输入'
-          //});       
+          //});
         });
       }
     }
