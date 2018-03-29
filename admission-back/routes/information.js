@@ -9,7 +9,7 @@ let ConfigSet = require('../configs/config_set.json');
 router.post('/', urlencodedParser, async function (req, res, next) {
 	// 创建时间类型，用于检测是否超时
 	let endDate = new Date();
-	endDate.setFullYear(ConfigSet.END_YEAR, ConfigSet.END_MONTH-1, ConfigSet.END_DAY);
+	endDate.setFullYear(ConfigSet.END_YEAR, ConfigSet.END_MONTH - 1, ConfigSet.END_DAY);
 	let today = new Date();
 
 	// 获取req.body传来的信息，暂存在StudentData中
@@ -81,11 +81,12 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 });
 // 验证StudentData是否格式合法，具有必须字段
 function _validateStudentData(StudentData) {
+	let name = /^[\u4E00-\u9FA5]{2,10}$/
 	let uid = /^U(\d{9})$/
 	let sex = /^[\u7537\u5973]$/
 	let phone = /^1(\d{10})$/
 
-	if (StudentData.name === undefined || StudentData.name == "")
+	if (StudentData.name === undefined || !name.test(StudentData.name))
 		return false;
 	if (StudentData.uid === undefined || !uid.test(StudentData.uid))
 		return false;
