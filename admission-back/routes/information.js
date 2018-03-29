@@ -6,6 +6,16 @@ let urlencodedParser = bodyParser.urlencoded({ extended: false });
 let fs = require('fs');
 let ConfigSet = require('../configs/config_set.json');
 
+// 跨域header设定
+router.all('*', function(req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "X-Requested-With");
+	res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+	res.header("X-Powered-By",' 3.2.1')
+	res.header("Content-Type", "application/json;charset=utf-8");
+	next();
+});
+
 router.post('/', urlencodedParser, async function (req, res, next) {
 	// 创建时间类型，用于检测是否超时
 	let endDate = new Date();

@@ -109,7 +109,7 @@
     methods: {
       submitForm(){
         this.$http({
-              url: '/InformationSend',
+              url: "InformationSend",
               method: 'POST',
               body: {
                 name: this.ruleForm.name,

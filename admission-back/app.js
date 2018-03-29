@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use('/', index);
 //app.use('/users', users);
-app.use('/InformationSend', informationSend);
+app.use("/InformationSend", informationSend);
 app.use('/InformationLookfor', informationLookfor);
 
 // catch 404 and forward to error handler
