@@ -81,15 +81,19 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 });
 // 验证StudentData是否格式合法，具有必须字段
 function _validateStudentData(StudentData) {
+	let uid = /^U(\d{9})$/
+	let sex = /^[\u7537\u5973]$/
+	let phone = /^1(\d{10})$/
+
 	if (StudentData.name === undefined || StudentData.name == "")
 		return false;
-	if (StudentData.uid === undefined || StudentData.uid == "")
+	if (StudentData.uid === undefined || !uid.test(StudentData.uid))
 		return false;
-	if (StudentData.sex === undefined || StudentData.sex == "")
+	if (StudentData.sex === undefined || !sex.test(StudentData.sex))
 		return false;
 	if (StudentData.class === undefined || StudentData.class == "")
 		return false;
-	if (StudentData.phone === undefined || StudentData.phone == "")
+	if (StudentData.phone === undefined || !phone.test(StudentData.phone))
 		return false;
 	if (StudentData.FirstExcept === undefined || StudentData.FirstExcept == "")
 		return false;

@@ -40,7 +40,9 @@ router.post('/', urlencodedParser, async function (req, res, next) {
 })
 
 function _validateStudentData(StudentData) {
-	if (StudentData.uidnph === undefined || StudentData.uidnph == "")
+	let uidnph = /^U\d{9}\+\d{4}$/
+
+	if (StudentData.uidnph === undefined || !uidnph.test(StudentData.uidnph))
 		return false;
 	return true;
 }
