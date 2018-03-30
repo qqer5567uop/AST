@@ -1,9 +1,9 @@
 <template>
   <div class="home" >
-    <body background="/static/BackGround/bk6.jpg">
+    <body background="/static/BackGround/bk7.jpg">
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <h1>
-        学生会介绍<br/>工作人员正在赶制中
+        学生会介绍
       </h1>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </body>

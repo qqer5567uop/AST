@@ -1,9 +1,9 @@
 <template>
   <div>
-    <body background="/static/BackGround/bk12.jpg">
+    <body background="/static/Department/2.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
       <el-card :body-style="{ padding: '0px' }"  class="card" >
-        <div>
+        <div>             
           <section>
             <h3 >一.主要职能</h3>
             <p>我泱泱在华科汇聚30000+的人才，在华中科技大学电信学院文艺部任职，意味着：为36.19个梵蒂冈（人口829）或2.30个瑙鲁（人口13049）举行了一场声势浩大的春节联欢晚会。<br/>成为CCTV1大型歌舞晚会的组织者与策划者的机会就在这里，你还在等什么呢？
@@ -22,7 +22,7 @@
           </section>
        </div><br/>
       </el-card>
-      <br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </body>
   </div>
 </template>
@@ -46,6 +46,13 @@
 </script>
 
 <style scoped>
+   .card{
+    border-radius: 20px;
+    margin: 60px;
+    width: 85%;
+    height: 85%;
+    float: center;
+  }
   div{
     font-family: "微软雅黑"
   }
@@ -53,42 +60,4 @@
     color: crimson
   }
   aside{font-family: "微软雅黑";color: fuchsia}
-  .card{
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: auto;
-  }
-
-  @media all and (min-width: 330px)and (max-width: 420px){
-    .card{
-      border-radius: 10px;
-      margin-left: 16px;
-      margin-right: 16px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media all and (min-width: 420px)and (max-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 35px;
-      margin-right: 35px;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-  @media all and (min-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 60px;
-      margin-right: 60px;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
-  }
-
 </style>

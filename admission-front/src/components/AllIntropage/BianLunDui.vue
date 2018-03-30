@@ -1,8 +1,8 @@
 <template>
   <div>
-    <body background="/static/BackGround/bk12.jpg">
+    <body background="/static/Department/2.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
-      <el-card :body-style="{ padding: '0px' }"  class="card" >
+      <el-card :body-style="{ padding: '0px' }"  class="card" >             
           <ul type="disc">
             <li>优秀的我们</li>
             <br>电信学院辩论队成立于2010年，是一支年轻的队伍，但实力却不容小觑。短短几年内，该队伍已经取得了喻晓亚军，新生杯亚军，喻晓四强这样的好成绩，以优秀的辩论成绩证明，电信饺子们不仅能做好技术，对辩论了同样在行<br>&emsp;
@@ -22,7 +22,7 @@
 		      	</ul>
 		      </ul>
       </el-card>
-      <br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </body>
     </div>
 </template>
@@ -47,41 +47,11 @@
 
 <style scoped>
   .card{
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: auto;
+    border-radius: 20px;
+    margin: 60px;
+    width: 85%;
+    height: 85%;
+    float: center;
   }
-
-  @media all and (min-width: 330px)and (max-width: 420px){
-    .card{
-      border-radius: 10px;
-      margin-left: 16px;
-      margin-right: 16px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media all and (min-width: 420px)and (max-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 35px;
-      margin-right: 35px;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-  @media all and (min-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 60px;
-      margin-right: 60px;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
-  }
-
+  div{font-family: "微软雅黑"}
 </style>

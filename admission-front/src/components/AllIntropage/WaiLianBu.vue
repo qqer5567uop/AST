@@ -1,9 +1,9 @@
 <template>
   <div>
-    <body background="/static/BackGround/bk12.jpg">
+    <body background="/static/Department/2.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
       <el-card :body-style="{ padding: '0px' }"  class="card" >
-        <div>
+        <div>             
           <section>
             <h3>一.工作简介</h3>
             <ul>外联部的工作相对其他部的工作来说比较特殊，我们的工作要走在其他部门之前，很需要其他部门的配合和提前得到各部门的协助，所以我们与其他部门搞好关系是非常必要的。外联部将会尽可能的发挥本部作用，与有可能成为合作伙伴的各企业，事业单位做好沟通与交流，建立良好的合作关系，以便为我系的各大活动提供物资所需，保障活动的完善与到位。
@@ -17,7 +17,7 @@
 		      </section>
         </div>
       </el-card>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </body>
   </div>
 </template>
@@ -48,46 +48,5 @@
     height: 85%;
     float: center;
   }
-
-</style>
-<style scoped>
   div{font-family: "微软雅黑"}
-  .card{
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: auto;
-  }
-
-  @media all and (min-width: 330px)and (max-width: 420px){
-    .card{
-      border-radius: 10px;
-      margin-left: 16px;
-      margin-right: 16px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media all and (min-width: 420px)and (max-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 35px;
-      margin-right: 35px;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-  @media all and (min-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 60px;
-      margin-right: 60px;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
-  }
-
 </style>

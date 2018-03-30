@@ -1,9 +1,9 @@
 <template>
   <div>
-    <body background="/static/BackGround/bk12.jpg">
+    <body background="/static/Department/2.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
       <el-card :body-style="{ padding: '0px' }"  class="card" >
-        <div>
+        <div>             
           <section>
             <h3 >一.主要职能</h3>
             <p>主持人队是一个为电信学院举办大型活动时提供主持人的队伍，负责在例如迎新晚会等活动中完成主持<br>
@@ -37,7 +37,7 @@
 		    </ul>
 	    </aside>
       </el-card>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </body>
     </div>
     </template>
@@ -62,6 +62,13 @@
 
 
 <style scoped>
+   .card{
+    border-radius: 20px;
+    margin: 60px;
+    width: 85%;
+    height: 85%;
+    float: center;
+  }
   div{
     font-family: "微软雅黑"
   }
@@ -69,42 +76,4 @@
     color: crimson
   }
   aside{font-family: "微软雅黑";color: fuchsia}
-  .card{
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: auto;
-  }
-
-  @media all and (min-width: 330px)and (max-width: 420px){
-    .card{
-      border-radius: 10px;
-      margin-left: 16px;
-      margin-right: 16px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media all and (min-width: 420px)and (max-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 35px;
-      margin-right: 35px;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-  @media all and (min-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 60px;
-      margin-right: 60px;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
-  }
-
 </style>

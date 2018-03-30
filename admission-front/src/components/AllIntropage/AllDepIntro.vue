@@ -1,6 +1,6 @@
 <template>
   <div>
-    <body background="/static/BackGround/bk4.jpg">
+    <body background="/static/BackGround/bk12.jpg">
     <el-row class="row" id="card">
       <el-card :body-style="{ padding: '0px' }"  class="card" >
         <div style="padding: 6px;text-align:center;">
@@ -33,7 +33,7 @@
       <el-card :body-style="{ padding: '0px' }" class="card">
         <img src="" class="image">
         <div style="padding: 6px;text-align:center;">
-          <br/>
+          <br/> 
           <span v-on:click="handleCard('BanGongShi')"><img src="/static/Department/office.gif" class="image">办公室</span>
         </div>
       </el-card>
@@ -142,7 +142,7 @@
       </el-card>
 
 
-    </el-row><br/><br/><br/><br/>
+    </el-row>
     </body>
   </div>
 </template>
@@ -271,5 +271,5 @@
       float: left;
     }
   }
-
+  
 </style>

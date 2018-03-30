@@ -20,6 +20,7 @@ const router = new VueRouter({
   routes: routeConfig
 })
 
+
 /* eslint-disable no-new */
 new Vue({
   router,

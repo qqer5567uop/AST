@@ -1,8 +1,8 @@
 <template>
   <div>
-    <body background="/static/BackGround/bk12.jpg">
+    <body background="/static/Department/2.jpg">
     <el-button icon="el-icon-back" v-on:click="handleCard('AllDepintro')"></el-button>
-      <el-card :body-style="{ padding: '0px' }"  class="card" >
+      <el-card :body-style="{ padding: '0px' }"  class="card" >             
            <section>
             <h3>一.部门定位</h3>
             <p>女生部，在各大高校大型组织里都会作为独立的部门存在，是一个以女生生活为主的特殊部门。<br>它是女生发挥自己的特长，展现自我风采的一个舞台，同时也为女生在生活和心理方面提供帮助，从而形成一个良好的生活氛围，展现女生热情上进，活泼大方的青春风采。
@@ -26,7 +26,7 @@
         </ul>
         </aside>
       </el-card>
-      <br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </body>
   </div>
 </template>
@@ -49,46 +49,15 @@
   }
 </script>
 <style scoped>
+  .card{
+    border-radius: 20px;
+    margin: 60px;
+    width: 85%;
+    height: 85%;
+    float: center;
+  }
   div{font-family: "微软雅黑"}
   h3{color: crimson}
   aside{font-family: "微软雅黑"}
   p{ text-indent:2em;}
-  .card{
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    height: auto;
-  }
-
-  @media all and (min-width: 330px)and (max-width: 420px){
-    .card{
-      border-radius: 10px;
-      margin-left: 16px;
-      margin-right: 16px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media all and (min-width: 420px)and (max-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 35px;
-      margin-right: 35px;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-  @media all and (min-width: 800px){
-    .card{
-      border-radius: 20px;
-      margin-left: 60px;
-      margin-right: 60px;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-    }
-  }
-
 </style>

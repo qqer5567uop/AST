@@ -1,6 +1,6 @@
 <template>
-<body background="/static/BackGround/bk5.jpg">
-  <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="30%" class="demo-ruleForm">
+<body background="/static/BackGround/bk15.jpg">
+  <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="50%" style="width: 60%" class="demo-ruleForm">
 
     <el-form-item label="姓名" prop="name" style="padding-top: 40px">
       <el-input  v-model="ruleForm.name"></el-input>
@@ -89,7 +89,7 @@
             { min: 10,max: 10, message: '请输入正确的学号', trigger: 'blur'}
           ],
           phone: [
-            { required: true, message: '请输入手机号', trigger: 'blur' },
+            { type: 'number', required: true, message: '请输入手机号', trigger: 'blur' },
             { min: 11, max: 11, message: '请输入正确的手机号', trigger: 'blur' }
           ],
           FirstExcept: [
@@ -143,7 +143,7 @@
                         confirmButtonText: '确定',
                       });
                   }
-
+                
               })
           },
       open3() {
@@ -178,7 +178,7 @@
                     confirmButtonText: '确定',
                   });
                 }
-
+              
             })
         }).catch(() => {
           //this.$message({
