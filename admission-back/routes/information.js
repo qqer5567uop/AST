@@ -16,7 +16,7 @@ router.all('*', function(req, res, next) {
 	next();
 });
 
-router.post('/', urlencodedParser, async function (req, res, next) {
+router.post('/InformationSend', urlencodedParser, async function (req, res, next) {
 	// 创建时间类型，用于检测是否超时
 	let endDate = new Date();
 	endDate.setFullYear(ConfigSet.END_YEAR, ConfigSet.END_MONTH - 1, ConfigSet.END_DAY);

@@ -109,7 +109,7 @@
     methods: {
       submitForm(){
         this.$http({
-              url: "InformationSend",
+              url: "/api/InformationSend",
               method: 'POST',
               body: {
                 name: this.ruleForm.name,
@@ -154,7 +154,7 @@
           inputErrorMessage: '学号格式不正确'
         }).then(({ value }) => {
             this.$http({
-              url: '/InformationLookfor',
+              url: '/api/InformationLookfor',
               method: 'POST',
               body: {
                 uidnph: value
