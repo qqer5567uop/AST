@@ -1,8 +1,8 @@
 <template>
   <div class="home" >
-<body background="/static/BackGround/bk15.jpg" 
+<body background="/static/BackGround/bk15.jpg"
 style=" background-repeat:no-repeat ;
-background-size:100% 100%; 
+background-size:100% 100%;
 background-attachment:fixed;" >
 			<br/>
 			<br/>
@@ -18,7 +18,7 @@ background-attachment:fixed;" >
 				<br>
 				并为电信学院在校学生提供无偿服务的组织。
 				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			------------------------------------------------------------------技术支持---------------------------------------------------------------<br/>
+			<span style="text-align: center">--------------技术支持--------------</span><br/>
 			电子信息与通信学院<br/>
 			科协技术部<br/>
 			Institute of electronic information and communication<br/>
