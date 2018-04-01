@@ -15,7 +15,7 @@ router.all('*', function(req, res, next) {
 });
 
 /*  查询学生报名数据  */
-router.post('/', urlencodedParser, async function (req, res, next) {
+router.post('/InformationLookfor', urlencodedParser, async function (req, res, next) {
 	let collection = await informationDB.getCollection();
 
 	// 检测数据是否符合
