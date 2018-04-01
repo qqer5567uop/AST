@@ -81,8 +81,8 @@ export default {
     background-color: #545c64;
   }
   .item{
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   header .el-menu-demo{
     padding-left: 0;
@@ -99,12 +99,12 @@ export default {
   @media all and (min-width: 400px)and (max-width: 560px){
 
     .item{
-      padding-left: 3%;
-      padding-right: 3%;
+      padding-left: 2%;
+      padding-right: 2%;
     }
     header .el-menu-demo{
-      padding-left: 9%;
-      padding-right: 9%;
+      padding-left: 5%;
+      padding-right: 5%;
 
     }
 

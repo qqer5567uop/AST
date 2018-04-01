@@ -2,7 +2,7 @@
   <div>
     <body background="/static/BackGround/bk13.jpg"
     style=" background-repeat:no-repeat ;
-background-size:100% 100%; 
+background-size:100% 100%;
 background-attachment:fixed;" >
     <el-row class="row" id="card">
       <el-card :body-style="{ padding: '0px' }"  class="card" >
@@ -227,17 +227,17 @@ background-attachment:fixed;" >
       }
     }
   }
+
 </script>
 
 <style scoped>
   .card{
     font-size: small;
     border-radius: 10px;
-    margin: 10px;
-    width:80px;
+    margin: 1.5%;
+    width:28%;
     height: 100px;
     float: left;
-    
   }
 
   .image {
@@ -248,20 +248,30 @@ background-attachment:fixed;" >
   @media all and (min-width: 330px)and (max-width: 420px){
     .card{
       border-radius: 15px;
-      margin: 15px;
-      width:90px;
+      margin: 1.5%;
+      width:28%;
       height: 110px;
       float: left;
     }
   }
 
-  @media all and (min-width: 420px)and (max-width: 800px){
+  @media all and (min-width: 420px)and (max-width: 600px){
     .card{
       font-size: medium;
       border-radius: 15px;
-      margin: 30px;
-      width:100px;
-      height: 120px;
+      margin: 2%;
+      width:  20%;
+      height: 130px;
+      float: left;
+    }
+  }
+  @media all and (min-width: 600px)and (max-width: 800px){
+    .card{
+      font-size: medium;
+      border-radius: 15px;
+      margin: 4%;
+      width:  15%;
+      height: 130px;
       float: left;
     }
   }
