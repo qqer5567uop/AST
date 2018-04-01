@@ -234,9 +234,9 @@ background-attachment:fixed;" >
   .card{
     font-size: small;
     border-radius: 10px;
-    margin: 1.5%;
-    width:28%;
-    height: 100px;
+    margin: 3%;
+    width:26%;
+    height: 110px;
     float: left;
   }
 
@@ -247,25 +247,37 @@ background-attachment:fixed;" >
 
   @media all and (min-width: 330px)and (max-width: 420px){
     .card{
+      font-size: small;
       border-radius: 15px;
-      margin: 1.5%;
-      width:28%;
+      margin: 3%;
+      width:26%;
+      height: 120px;
+      float: left;
+    }
+  }
+
+  @media all and (min-width: 420px)and (max-width: 500px){
+    .card{
+      font-size: small;
+      border-radius: 15px;
+      margin: 3%;
+      width:  18%;
       height: 110px;
       float: left;
     }
   }
 
-  @media all and (min-width: 420px)and (max-width: 600px){
+  @media all and (min-width: 500px)and (max-width: 633px){
     .card{
-      font-size: medium;
+      font-size: small;
       border-radius: 15px;
-      margin: 2%;
-      width:  20%;
+      margin: 3%;
+      width:  18%;
       height: 130px;
       float: left;
     }
   }
-  @media all and (min-width: 600px)and (max-width: 800px){
+  @media all and (min-width: 633px)and (max-width: 800px){
     .card{
       font-size: medium;
       border-radius: 15px;
