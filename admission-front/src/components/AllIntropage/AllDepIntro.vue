@@ -1,6 +1,9 @@
 <template>
   <div>
-    <body background="/static/BackGround/bk4.jpg">
+    <body background="/static/BackGround/bk13.jpg"
+    style=" background-repeat:no-repeat ;
+background-size:100% 100%; 
+background-attachment:fixed;" >
     <el-row class="row" id="card">
       <el-card :body-style="{ padding: '0px' }"  class="card" >
         <div style="padding: 6px;text-align:center;">
@@ -234,6 +237,7 @@
     width:80px;
     height: 100px;
     float: left;
+    
   }
 
   .image {

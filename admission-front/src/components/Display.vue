@@ -1,5 +1,8 @@
 <template>
-  <body background="/static/BackGround/bk12.jpg">
+  <body background="/static/BackGround/bk1.jpg"
+  style=" background-repeat:no-repeat ;
+background-size:100% 100%; 
+background-attachment:fixed;" >
   <br/><br/><br/><br/><br/>
   <el-carousel :interval="4000" type="card" height="450px">
     <el-carousel-item class="carousel__item" v-for="item in 1" :key="item">

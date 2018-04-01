@@ -1,44 +1,47 @@
 <template>
-<body background="/static/BackGround/bk5.jpg">
+<body background="/static/BackGround/bk9.jpg" 
+style=" background-repeat:no-repeat ;
+background-size:100% 100%; 
+background-attachment:fixed;" >
   <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="30%" class="demo-ruleForm">
 
-    <el-form-item label="姓名" prop="name" style="padding-top: 40px">
+    <el-form-item label="姓名" prop="name" style="padding-top: 80px; font-weight: bold ">
       <el-input  v-model="ruleForm.name"></el-input>
     </el-form-item>
 
-    <el-form-item label="性别" prop="sex">
+    <el-form-item label="性别" prop="sex" style=" font-weight: bold">
       <el-radio-group v-model="ruleForm.sex">
-        <el-radio label="男"></el-radio>
-        <el-radio label="女"></el-radio>
+        <el-radio label="男" style=" font-weight: bold" ></el-radio>
+        <el-radio label="女" style=" font-weight: bold"></el-radio>
       </el-radio-group>
     </el-form-item>
 
-    <el-form-item label="班级" prop="class1">
+    <el-form-item label="班级" prop="class1" style=" font-weight: bold">
       <el-input v-model="ruleForm.class1"></el-input>
     </el-form-item>
 
-    <el-form-item label="学号" prop="uid">
+    <el-form-item label="学号" prop="uid" style=" font-weight: bold">
       <el-input  v-model="ruleForm.uid"></el-input>
     </el-form-item>
 
-    <el-form-item label="手机" prop="phone">
+    <el-form-item label="手机" prop="phone" style=" font-weight: bold">
       <el-input v-model="ruleForm.phone"></el-input>
     </el-form-item>
 
-    <el-form-item label="第一志愿" prop="FirstExcept">
+    <el-form-item label="第一志愿" prop="FirstExcept" style=" font-weight: bold">
       <el-input v-model="ruleForm.FirstExcept"></el-input>
     </el-form-item>
-    <el-form-item label="第二志愿" prop="SecondExcept">
+    <el-form-item label="第二志愿" prop="SecondExcept" style=" font-weight: bold">
       <el-input v-model="ruleForm.SecondExcept"></el-input>
     </el-form-item>
-    <el-form-item label="是否服从调剂" prop="AdjustedOrNot">
+    <el-form-item label="是否服从调剂" prop="AdjustedOrNot" style=" font-weight: bold">
       <el-radio-group v-model="ruleForm.AdjustedOrNot">
-        <el-radio label="是"></el-radio>
-        <el-radio label="否"></el-radio>
+        <el-radio label="是" style=" font-weight: bold"></el-radio>
+        <el-radio label="否" style=" font-weight: bold"></el-radio>
       </el-radio-group>
     </el-form-item>
 
-    <el-form-item label="自我介绍" prop="SelfIntroduction">
+    <el-form-item label="自我介绍" prop="SelfIntroduction" style=" font-weight: bold">
       <el-input type="textarea" v-model="ruleForm.SelfIntroduction"></el-input>
     </el-form-item>
 
