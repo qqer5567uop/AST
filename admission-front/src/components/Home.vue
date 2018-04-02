@@ -6,7 +6,7 @@ background-size:100% 100%;
 background-attachment:fixed;" >
 			<br/>
 			<br/>
-			<h4>电子信息与通信学院分团委学生会</h4>
+			<span class="title">电子信息与通信学院分团委学生会</span>
 			<br/>
 			<br/>
 		  <br/>
@@ -49,10 +49,16 @@ background-attachment:fixed;" >
     margin-right: 6%;
     margin-left: 0;
   }
+  .title{
+    font-size: 1.5rem;
+  }
   @media all and (min-width: 400px)and (max-width: 560px){
     .demo-ruleForm{
       margin-right: 15%;
       margin-left: 5%;
+    }
+    .title{
+      font-size: 2rem;
     }
 
   }
@@ -61,11 +67,17 @@ background-attachment:fixed;" >
       margin-right: 22%;
       margin-left: 16%;
     }
+    .title{
+      font-size: 2.5rem;
+    }
   }
   @media all and (min-width: 900px){
     .demo-ruleForm{
       margin-right: 30%;
       margin-left: 25%;
+    }
+    .title{
+      font-size: 3rem;
     }
   }
 
