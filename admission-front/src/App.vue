@@ -81,12 +81,12 @@ export default {
     background-color: #545c64;
   }
   .item{
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
   }
   header .el-menu-demo{
-    padding-left: -0.5%;
-    padding-right: -0.5%;
+    padding-left: 0;
+    padding-right: 0;
 
   }
 
