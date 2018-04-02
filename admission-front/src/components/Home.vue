@@ -6,7 +6,7 @@ background-size:100% 100%;
 background-attachment:fixed;" >
 			<br/>
 			<br/>
-			<h3>电子信息与通信学院分团委学生会</h3>
+			<h4>电子信息与通信学院分团委学生会</h4>
 			<br/>
 			<br/>
 		  <br/>

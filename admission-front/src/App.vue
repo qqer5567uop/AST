@@ -85,8 +85,8 @@ export default {
     padding-right: 1%;
   }
   header .el-menu-demo{
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: -0.5%;
+    padding-right: -0.5%;
 
   }
 

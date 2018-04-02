@@ -242,6 +242,7 @@ background-attachment:fixed;" >
 
   .image {
     width: 100%;
+    border-bottom: 1em;
     display: block;
   }
 
